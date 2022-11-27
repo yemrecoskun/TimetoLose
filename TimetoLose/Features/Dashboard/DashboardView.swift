@@ -9,12 +9,11 @@ import SwiftUI
 
 struct DashboardView: View {
     var body: some View {
-        NavigationView {
-            VStack{
-                ProfileView()
+            VStack {
+                ProfileView().padding(.horizontal,16).padding(.vertical,30)
+                SummaryDayView().padding(.horizontal,16).padding(.vertical,16)
                 Spacer()
-            }
-        }
+            }.background(Color.background.ignoresSafeArea())
     }
 }
 

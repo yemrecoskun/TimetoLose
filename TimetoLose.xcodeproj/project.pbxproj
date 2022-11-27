@@ -48,6 +48,8 @@
 		B6E3E44029334B590036ECE2 /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E43F29334B590036ECE2 /* AppText.swift */; };
 		B6E3E44229334B690036ECE2 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E44129334B690036ECE2 /* AppIcon.swift */; };
 		B6E3E4442933557C0036ECE2 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E4432933557C0036ECE2 /* AppColor.swift */; };
+		B6E3E447293384400036ECE2 /* ProcessCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E446293384400036ECE2 /* ProcessCircleView.swift */; };
+		B6E3E44A293393930036ECE2 /* SummaryDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E449293393930036ECE2 /* SummaryDayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		B6E3E43F29334B590036ECE2 /* AppText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
 		B6E3E44129334B690036ECE2 /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
 		B6E3E4432933557C0036ECE2 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		B6E3E446293384400036ECE2 /* ProcessCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessCircleView.swift; sourceTree = "<group>"; };
+		B6E3E449293393930036ECE2 /* SummaryDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryDayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 		7CFF75682933707E001F0D5F /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				B6E3E445293384290036ECE2 /* ProcessCircleView */,
 				7CFF756B2933713F001F0D5F /* Base */,
 				7CFF756F29337177001F0D5F /* TextViews */,
 				7CFF759C293379F6001F0D5F /* Buttons */,
@@ -311,6 +316,7 @@
 		B6E3E431293346110036ECE2 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				B6E3E4482933935E0036ECE2 /* SummaryDayView */,
 				7CFF756929337115001F0D5F /* Onboarding */,
 				B6E3E433293346C50036ECE2 /* Dashboard */,
 				B6E3E4322933468B0036ECE2 /* ProfileView */,
@@ -346,6 +352,22 @@
 				7CFF759329337449001F0D5F /* Extensions */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B6E3E445293384290036ECE2 /* ProcessCircleView */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3E446293384400036ECE2 /* ProcessCircleView.swift */,
+			);
+			path = ProcessCircleView;
+			sourceTree = "<group>";
+		};
+		B6E3E4482933935E0036ECE2 /* SummaryDayView */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3E449293393930036ECE2 /* SummaryDayView.swift */,
+			);
+			path = SummaryDayView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,9 +461,11 @@
 				B6E3E43B293347660036ECE2 /* ProfileModel.swift in Sources */,
 				7CFF75A729337D31001F0D5F /* ComponentDivider.swift in Sources */,
 				B6E3E43D293347750036ECE2 /* ProfileService.swift in Sources */,
+				B6E3E44A293393930036ECE2 /* SummaryDayView.swift in Sources */,
 				7CFF75952933745C001F0D5F /* Font+Extension.swift in Sources */,
 				B6E3E44229334B690036ECE2 /* AppIcon.swift in Sources */,
 				B6E3E4392933475A0036ECE2 /* ProfileView.swift in Sources */,
+				B6E3E447293384400036ECE2 /* ProcessCircleView.swift in Sources */,
 				7CFF75992933779E001F0D5F /* Color+Extension.swift in Sources */,
 				B6E3E42E2933440F0036ECE2 /* ApiManager.swift in Sources */,
 				44FAEB3328E7346D00A955EA /* Persistence.swift in Sources */,

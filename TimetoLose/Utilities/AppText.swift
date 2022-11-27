@@ -10,6 +10,7 @@ import Foundation
 struct AppText {
     enum Text: String {
         case welcome = "TimeToLose' ye Hoşgeldiniz!"
+        case summaryDayTitle = "Günün Özeti"
     }
 
     struct Common {
