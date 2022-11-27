@@ -8,21 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		44FAEB2A28E7346A00A955EA /* TimetoLoseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FAEB2928E7346A00A955EA /* TimetoLoseApp.swift */; };
-		44FAEB2C28E7346A00A955EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FAEB2B28E7346A00A955EA /* ContentView.swift */; };
 		44FAEB2E28E7346D00A955EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FAEB2D28E7346D00A955EA /* Assets.xcassets */; };
 		44FAEB3128E7346D00A955EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FAEB3028E7346D00A955EA /* Preview Assets.xcassets */; };
 		44FAEB3328E7346D00A955EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FAEB3228E7346D00A955EA /* Persistence.swift */; };
 		44FAEB3628E7346D00A955EA /* TimetoLose.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44FAEB3428E7346D00A955EA /* TimetoLose.xcdatamodeld */; };
+		B6E3E428293343D30036ECE2 /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E427293343D30036ECE2 /* NetworkConnection.swift */; };
+		B6E3E42A293343DF0036ECE2 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E429293343DF0036ECE2 /* NetworkConstants.swift */; };
+		B6E3E42C293344010036ECE2 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E42B293344010036ECE2 /* NetworkModel.swift */; };
+		B6E3E42E2933440F0036ECE2 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E42D2933440F0036ECE2 /* ApiManager.swift */; };
+		B6E3E430293345520036ECE2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E42F293345520036ECE2 /* Service.swift */; };
+		B6E3E435293347370036ECE2 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E434293347370036ECE2 /* DashboardView.swift */; };
+		B6E3E437293347490036ECE2 /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E436293347490036ECE2 /* DashboardModel.swift */; };
+		B6E3E4392933475A0036ECE2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E4382933475A0036ECE2 /* ProfileView.swift */; };
+		B6E3E43B293347660036ECE2 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E43A293347660036ECE2 /* ProfileModel.swift */; };
+		B6E3E43D293347750036ECE2 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E43C293347750036ECE2 /* ProfileService.swift */; };
+		B6E3E44029334B590036ECE2 /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E43F29334B590036ECE2 /* AppText.swift */; };
+		B6E3E44229334B690036ECE2 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E44129334B690036ECE2 /* AppIcon.swift */; };
+		B6E3E4442933557C0036ECE2 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E4432933557C0036ECE2 /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44FAEB2628E7346A00A955EA /* TimetoLose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimetoLose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FAEB2928E7346A00A955EA /* TimetoLoseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetoLoseApp.swift; sourceTree = "<group>"; };
-		44FAEB2B28E7346A00A955EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		44FAEB2D28E7346D00A955EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44FAEB3028E7346D00A955EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44FAEB3228E7346D00A955EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		44FAEB3528E7346D00A955EA /* TimetoLose.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimetoLose.xcdatamodel; sourceTree = "<group>"; };
+		B6E3E427293343D30036ECE2 /* NetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
+		B6E3E429293343DF0036ECE2 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		B6E3E42B293344010036ECE2 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		B6E3E42D2933440F0036ECE2 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		B6E3E42F293345520036ECE2 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B6E3E434293347370036ECE2 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		B6E3E436293347490036ECE2 /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
+		B6E3E4382933475A0036ECE2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B6E3E43A293347660036ECE2 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		B6E3E43C293347750036ECE2 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		B6E3E43F29334B590036ECE2 /* AppText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
+		B6E3E44129334B690036ECE2 /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
+		B6E3E4432933557C0036ECE2 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +79,10 @@
 		44FAEB2828E7346A00A955EA /* TimetoLose */ = {
 			isa = PBXGroup;
 			children = (
+				B6E3E43E29334B360036ECE2 /* Utilities */,
+				B6E3E431293346110036ECE2 /* Features */,
+				B6E3E426293343B80036ECE2 /* NetworkLayer */,
 				44FAEB2928E7346A00A955EA /* TimetoLoseApp.swift */,
-				44FAEB2B28E7346A00A955EA /* ContentView.swift */,
 				44FAEB2D28E7346D00A955EA /* Assets.xcassets */,
 				44FAEB3228E7346D00A955EA /* Persistence.swift */,
 				44FAEB3428E7346D00A955EA /* TimetoLose.xcdatamodeld */,
@@ -71,6 +97,56 @@
 				44FAEB3028E7346D00A955EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6E3E426293343B80036ECE2 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3E427293343D30036ECE2 /* NetworkConnection.swift */,
+				B6E3E429293343DF0036ECE2 /* NetworkConstants.swift */,
+				B6E3E42B293344010036ECE2 /* NetworkModel.swift */,
+				B6E3E42D2933440F0036ECE2 /* ApiManager.swift */,
+				B6E3E42F293345520036ECE2 /* Service.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		B6E3E431293346110036ECE2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3E433293346C50036ECE2 /* Dashboard */,
+				B6E3E4322933468B0036ECE2 /* ProfileView */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B6E3E4322933468B0036ECE2 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3E4382933475A0036ECE2 /* ProfileView.swift */,
+				B6E3E43A293347660036ECE2 /* ProfileModel.swift */,
+				B6E3E43C293347750036ECE2 /* ProfileService.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		B6E3E433293346C50036ECE2 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3E434293347370036ECE2 /* DashboardView.swift */,
+				B6E3E436293347490036ECE2 /* DashboardModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		B6E3E43E29334B360036ECE2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3E43F29334B590036ECE2 /* AppText.swift */,
+				B6E3E44129334B690036ECE2 /* AppIcon.swift */,
+				B6E3E4432933557C0036ECE2 /* AppColor.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +219,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E3E42A293343DF0036ECE2 /* NetworkConstants.swift in Sources */,
+				B6E3E437293347490036ECE2 /* DashboardModel.swift in Sources */,
 				44FAEB3628E7346D00A955EA /* TimetoLose.xcdatamodeld in Sources */,
+				B6E3E43B293347660036ECE2 /* ProfileModel.swift in Sources */,
+				B6E3E43D293347750036ECE2 /* ProfileService.swift in Sources */,
+				B6E3E44229334B690036ECE2 /* AppIcon.swift in Sources */,
+				B6E3E4392933475A0036ECE2 /* ProfileView.swift in Sources */,
+				B6E3E42E2933440F0036ECE2 /* ApiManager.swift in Sources */,
 				44FAEB3328E7346D00A955EA /* Persistence.swift in Sources */,
-				44FAEB2C28E7346A00A955EA /* ContentView.swift in Sources */,
+				B6E3E4442933557C0036ECE2 /* AppColor.swift in Sources */,
+				B6E3E428293343D30036ECE2 /* NetworkConnection.swift in Sources */,
+				B6E3E430293345520036ECE2 /* Service.swift in Sources */,
+				B6E3E435293347370036ECE2 /* DashboardView.swift in Sources */,
+				B6E3E42C293344010036ECE2 /* NetworkModel.swift in Sources */,
+				B6E3E44029334B590036ECE2 /* AppText.swift in Sources */,
 				44FAEB2A28E7346A00A955EA /* TimetoLoseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
