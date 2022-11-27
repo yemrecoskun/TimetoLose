@@ -8,14 +8,32 @@
 import SwiftUI
 
 struct GoalView: View {
+    @State private var isButtonDisabled = false
+    private let buttonWidth = UIScreen.screenWidth * 0.8
+
     var body: some View {
         ZStack {
             Color.background.ignoresSafeArea()
             VStack {
                 ComponentLabelHeader(text: AppText.GoalView.header, font: .bodyExtraLarge, textColor: .brandOrange)
                 ComponentLabelBody(text: AppText.GoalView.body, font: .bodyRegular, textColor: .brandOrange)
+                // MARK: Choices
+                VStack {
+                    ComponentPrimaryButton(title: AppText.GoalView.firstChoice, width: buttonWidth, isDisabled: $isButtonDisabled, action: buttonAction)
+                    ComponentPrimaryButton(title: AppText.GoalView.secondChoice, width: buttonWidth, isDisabled: $isButtonDisabled, action: buttonAction)
+                    ComponentPrimaryButton(title: AppText.GoalView.thirdChoice, width: buttonWidth, isDisabled: $isButtonDisabled, action: buttonAction)
+                    ComponentPrimaryButton(title: AppText.GoalView.fourthChoice, width: buttonWidth, isDisabled: $isButtonDisabled, action: buttonAction)
+                }
+                Spacer()
+                ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonDisabled, action: buttonNextTapped)
             }
         }
+    }
+
+    private func buttonAction() {
+    }
+
+    private func buttonNextTapped() {
     }
 }
 

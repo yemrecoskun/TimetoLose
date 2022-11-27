@@ -12,6 +12,10 @@ struct AppText {
         case welcome = "TimeToLose' ye Hoşgeldiniz!"
     }
 
+    struct Common {
+        static let next = "Next"
+    }
+
     struct GoalView {
         static let header = "What's your goal?"
         static let body = "We'll personalize recommendations based on your goals"
