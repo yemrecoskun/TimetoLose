@@ -30,9 +30,9 @@ struct SummaryDayView: View {
                     ComponentLabelBody(text: "8h 20m",textColor: .lightYellow)
                     ComponentLabelBody(text: "Water Intake",textColor: .black)
                     ComponentLabelBody(text: "4 liters",textColor: .appColor)
-                }.padding(20).background(Color.white).cornerRadius(22).shadow(radius: 3)
+                }.padding(20).background(Color.white).cornerRadius(22).shadow(radius: 2)
             }
-        }.padding(10).background(Color.white).cornerRadius(22).shadow(radius: 5)
+        }.padding(10).background(Color.white).cornerRadius(22).shadow(radius: 2)
     }
 }
 

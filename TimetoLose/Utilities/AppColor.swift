@@ -14,4 +14,6 @@ extension Color {
     static let darkPing = Color(hex: "FCB29F")
     static let darkYellow = Color(hex: "AC9801")
     static let lightYellow = Color(hex: "FDDA02")
+    static let success = Color(hex: "24FF00")
+    static let failed = Color(hex: "FF0000")
 }

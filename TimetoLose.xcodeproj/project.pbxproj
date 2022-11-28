@@ -51,6 +51,7 @@
 		B6E3E447293384400036ECE2 /* ProcessCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E446293384400036ECE2 /* ProcessCircleView.swift */; };
 		B6E3E44A293393930036ECE2 /* SummaryDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E449293393930036ECE2 /* SummaryDayView.swift */; };
 		B6E3E44D2933FD5C0036ECE2 /* BottomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E44C2933FD5C0036ECE2 /* BottomMenuView.swift */; };
+		B6E3E45329354A9D0036ECE2 /* WeeklyStreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E45229354A9D0036ECE2 /* WeeklyStreakView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		B6E3E446293384400036ECE2 /* ProcessCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessCircleView.swift; sourceTree = "<group>"; };
 		B6E3E449293393930036ECE2 /* SummaryDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryDayView.swift; sourceTree = "<group>"; };
 		B6E3E44C2933FD5C0036ECE2 /* BottomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuView.swift; sourceTree = "<group>"; };
+		B6E3E45229354A9D0036ECE2 /* WeeklyStreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyStreakView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +320,7 @@
 		B6E3E431293346110036ECE2 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				B6E3E45129354A860036ECE2 /* WeeklyStreakView */,
 				B6E3E44B2933FD4D0036ECE2 /* BottomMenu */,
 				B6E3E4482933935E0036ECE2 /* SummaryDayView */,
 				7CFF756929337115001F0D5F /* Onboarding */,
@@ -379,6 +382,14 @@
 				B6E3E44C2933FD5C0036ECE2 /* BottomMenuView.swift */,
 			);
 			path = BottomMenu;
+			sourceTree = "<group>";
+		};
+		B6E3E45129354A860036ECE2 /* WeeklyStreakView */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3E45229354A9D0036ECE2 /* WeeklyStreakView.swift */,
+			);
+			path = WeeklyStreakView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,6 +491,7 @@
 				B6E3E447293384400036ECE2 /* ProcessCircleView.swift in Sources */,
 				7CFF75992933779E001F0D5F /* Color+Extension.swift in Sources */,
 				B6E3E42E2933440F0036ECE2 /* ApiManager.swift in Sources */,
+				B6E3E45329354A9D0036ECE2 /* WeeklyStreakView.swift in Sources */,
 				44FAEB3328E7346D00A955EA /* Persistence.swift in Sources */,
 				B6E3E4442933557C0036ECE2 /* AppColor.swift in Sources */,
 				B6E3E428293343D30036ECE2 /* NetworkConnection.swift in Sources */,

@@ -13,8 +13,9 @@ struct DashboardView: View {
                 ProfileView().padding(.horizontal,16).padding(.vertical,30)
                 Spacer()
                 ScrollView {
-                    SummaryDayView().padding(.horizontal,16).padding(.vertical,16)
-                }
+                    WeeklyStreakView().padding(.horizontal,16).padding(.top,5)
+                    SummaryDayView().padding(.horizontal,16).padding(.top,5)
+                }.padding(.top,5)
                 Spacer()
                 BottomMenuView()
             }.background(Color.background)
