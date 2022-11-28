@@ -11,10 +11,12 @@ struct ComponentLabelHeader: View, BaseLabelProtocol {
     var text: String
     var font: Font = .bodyLargeBlack
     var textColor: Color = .gray
+    var textAlignment: TextAlignment = .center
 
     var body: some View {
         Text(text)
             .font(font)
             .foregroundColor(textColor)
+            .multilineTextAlignment(textAlignment)
     }
 }
