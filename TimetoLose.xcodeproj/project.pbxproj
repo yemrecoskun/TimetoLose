@@ -50,6 +50,7 @@
 		B6E3E4442933557C0036ECE2 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E4432933557C0036ECE2 /* AppColor.swift */; };
 		B6E3E447293384400036ECE2 /* ProcessCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E446293384400036ECE2 /* ProcessCircleView.swift */; };
 		B6E3E44A293393930036ECE2 /* SummaryDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E449293393930036ECE2 /* SummaryDayView.swift */; };
+		B6E3E44D2933FD5C0036ECE2 /* BottomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E44C2933FD5C0036ECE2 /* BottomMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		B6E3E4432933557C0036ECE2 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		B6E3E446293384400036ECE2 /* ProcessCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessCircleView.swift; sourceTree = "<group>"; };
 		B6E3E449293393930036ECE2 /* SummaryDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryDayView.swift; sourceTree = "<group>"; };
+		B6E3E44C2933FD5C0036ECE2 /* BottomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +318,7 @@
 		B6E3E431293346110036ECE2 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				B6E3E44B2933FD4D0036ECE2 /* BottomMenu */,
 				B6E3E4482933935E0036ECE2 /* SummaryDayView */,
 				7CFF756929337115001F0D5F /* Onboarding */,
 				B6E3E433293346C50036ECE2 /* Dashboard */,
@@ -368,6 +371,14 @@
 				B6E3E449293393930036ECE2 /* SummaryDayView.swift */,
 			);
 			path = SummaryDayView;
+			sourceTree = "<group>";
+		};
+		B6E3E44B2933FD4D0036ECE2 /* BottomMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3E44C2933FD5C0036ECE2 /* BottomMenuView.swift */,
+			);
+			path = BottomMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -464,6 +475,7 @@
 				B6E3E44A293393930036ECE2 /* SummaryDayView.swift in Sources */,
 				7CFF75952933745C001F0D5F /* Font+Extension.swift in Sources */,
 				B6E3E44229334B690036ECE2 /* AppIcon.swift in Sources */,
+				B6E3E44D2933FD5C0036ECE2 /* BottomMenuView.swift in Sources */,
 				B6E3E4392933475A0036ECE2 /* ProfileView.swift in Sources */,
 				B6E3E447293384400036ECE2 /* ProcessCircleView.swift in Sources */,
 				7CFF75992933779E001F0D5F /* Color+Extension.swift in Sources */,

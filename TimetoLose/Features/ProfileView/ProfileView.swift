@@ -29,7 +29,7 @@ struct ProfileView: View {
             .background(Color.appColor)
             .foregroundColor(Color.white)
             .cornerRadius(22)
-            .frame(height: 10).shadow(radius: 10)
+            .frame(height: 10).shadow(radius: 5)
     }
 }
 

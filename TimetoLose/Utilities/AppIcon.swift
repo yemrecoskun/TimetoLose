@@ -14,6 +14,8 @@ struct AppIcon {
         case app = "app"
         case notification = "notification"
         case profile = "profile"
+        case home = "home"
+        case measure = "measure"
 }
     
     static func getIcon(_ name: Name,

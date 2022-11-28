@@ -12,12 +12,13 @@ struct SummaryDayView: View {
             ComponentLabelHeader(text: AppText.getText(.summaryDayTitle),textColor: .appColor).padding(10)
             HStack {
                 ZStack {
-                    ProcessCircleView(lineWidth: 12, percentage: 0.98, percentageColor: .darkPurple)
-                    ProcessCircleView(lineWidth: 12, percentage: 0.3, percentageColor: .darkPing).padding(18)
-                    ProcessCircleView(lineWidth: 12, percentage: 0.7, percentageColor: .darkYellow).padding(36)
-                    ProcessCircleView(lineWidth: 12, percentage: 0.5, percentageColor: .lightYellow).padding(54)
-                    ProcessCircleView(lineWidth: 12, percentage: 0.2, percentageColor: .appColor).padding(72)
+                    ProcessCircleView(lineWidth: 10, percentage: 0.98, percentageColor: .darkPurple)
+                    ProcessCircleView(lineWidth: 10, percentage: 0.3, percentageColor: .darkPing).padding(14)
+                    ProcessCircleView(lineWidth: 10, percentage: 0.7, percentageColor: .darkYellow).padding(28)
+                    ProcessCircleView(lineWidth: 10, percentage: 0.5, percentageColor: .lightYellow).padding(42)
+                    ProcessCircleView(lineWidth: 10, percentage: 0.2, percentageColor: .appColor).padding(56)
                 }.padding(2)
+                Spacer()
                 VStack(alignment: .leading) {
                     ComponentLabelBody(text: "Alınan",textColor: .black)
                     ComponentLabelBody(text: "1800 kCal",textColor: .darkPurple)
@@ -31,7 +32,7 @@ struct SummaryDayView: View {
                     ComponentLabelBody(text: "4 liters",textColor: .appColor)
                 }.padding(20).background(Color.white).cornerRadius(22).shadow(radius: 3)
             }
-        }.padding(10).background(Color.white).cornerRadius(22).shadow(radius: 13)
+        }.padding(10).background(Color.white).cornerRadius(22).shadow(radius: 5)
     }
 }
 

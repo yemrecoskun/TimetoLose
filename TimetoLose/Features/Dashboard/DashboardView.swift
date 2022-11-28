@@ -11,9 +11,13 @@ struct DashboardView: View {
     var body: some View {
             VStack {
                 ProfileView().padding(.horizontal,16).padding(.vertical,30)
-                SummaryDayView().padding(.horizontal,16).padding(.vertical,16)
                 Spacer()
-            }.background(Color.background.ignoresSafeArea())
+                ScrollView {
+                    SummaryDayView().padding(.horizontal,16).padding(.vertical,16)
+                }
+                Spacer()
+                BottomMenuView()
+            }.background(Color.background)
     }
 }
 
