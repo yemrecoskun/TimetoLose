@@ -9,14 +9,14 @@ import SwiftUI
 struct SummaryDayView: View {
     var body: some View {
         VStack(alignment: .leading) {
-            ComponentLabelHeader(text: AppText.getText(.summaryDayTitle),textColor: .appColor).padding(10)
+            ComponentLabelHeader(text: AppText.getText(.summaryDayTitle),textColor: .brandOrange).padding(10)
             HStack {
                 ZStack {
                     ProcessCircleView(lineWidth: 10, percentage: 0.98, percentageColor: .darkPurple)
                     ProcessCircleView(lineWidth: 10, percentage: 0.3, percentageColor: .darkPing).padding(14)
                     ProcessCircleView(lineWidth: 10, percentage: 0.7, percentageColor: .darkYellow).padding(28)
                     ProcessCircleView(lineWidth: 10, percentage: 0.5, percentageColor: .lightYellow).padding(42)
-                    ProcessCircleView(lineWidth: 10, percentage: 0.2, percentageColor: .appColor).padding(56)
+                    ProcessCircleView(lineWidth: 10, percentage: 0.2, percentageColor: .brandOrange).padding(56)
                 }.padding(2)
                 Spacer()
                 VStack(alignment: .leading) {
@@ -29,7 +29,7 @@ struct SummaryDayView: View {
                     ComponentLabelBody(text: "Sleep",textColor: .black)
                     ComponentLabelBody(text: "8h 20m",textColor: .lightYellow)
                     ComponentLabelBody(text: "Water Intake",textColor: .black)
-                    ComponentLabelBody(text: "4 liters",textColor: .appColor)
+                    ComponentLabelBody(text: "4 liters",textColor: .brandOrange)
                 }.padding(20).background(Color.white).cornerRadius(22).shadow(radius: 2)
             }
         }.padding(10).background(Color.white).cornerRadius(22).shadow(radius: 2)

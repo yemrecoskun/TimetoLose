@@ -10,7 +10,7 @@ import SwiftUI
 struct ProcessCircleView: View {
     var lineWidth : CGFloat = 0.0
     var percentage : CGFloat = 0.0
-    var percentageColor : Color = Color.appColor
+    var percentageColor : Color = Color.brandOrange
     init(lineWidth: CGFloat, percentage: CGFloat, percentageColor: Color) {
         self.lineWidth = lineWidth
         self.percentage = percentage

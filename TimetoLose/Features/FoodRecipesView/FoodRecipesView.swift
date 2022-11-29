@@ -8,16 +8,24 @@
 import SwiftUI
 
 struct FoodRecipesView: View {
+    @State var picker =  "Vegetarian"
+    var pickers = [ "Vegetarian", "Vegan" ]
     var body: some View {
         VStack {
             HStack {
                 Spacer()
-                ComponentLabelHeader(text: "Yemek Tarifleri",textColor: .appColor)
+                ComponentLabelHeader(text: "Yemek Tarifleri",textColor: .brandOrange)
                 Spacer()
-                Picker(selection: .constant(1), label: Text("Picker")) {
-                    Text("Vegetarian").tag(1)
-                    Text("Vegan").tag(2)
-                }.padding(5).background(Color.appColor).cornerRadius(20)
+                Picker("", selection: $picker) {
+                    ForEach(pickers, id: \.self) {
+                        Text($0)
+                    }
+                }.padding(5)
+                    .frame(width: UIScreen.screenWidth*0.4)
+                    .background(Color.brandOrange)
+                    .cornerRadius(20)
+                    .foregroundColor(.white)
+                    .colorMultiply(.white)
                 Spacer()
             }
             LabelImageView()

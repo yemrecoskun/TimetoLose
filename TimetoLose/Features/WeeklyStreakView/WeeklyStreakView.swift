@@ -10,7 +10,7 @@ import SwiftUI
 struct WeeklyStreakView: View {
     var body: some View {
         VStack {
-            ComponentLabelHeader(text: "Weekly Streak",textColor: .appColor)
+            ComponentLabelHeader(text: "Weekly Streak",textColor: .brandOrange)
             HStack {
                 Spacer()
                 VStack {
@@ -26,16 +26,16 @@ struct WeeklyStreakView: View {
                     ComponentLabelHeader(text: "Thu",textColor: .success)
                 }
                 VStack {
-                    Circle().frame(width: 32,height: 32).foregroundColor(.appColor)
-                    ComponentLabelHeader(text: "Sat",textColor: .appColor)
+                    Circle().frame(width: 32,height: 32).foregroundColor(.brandOrange)
+                    ComponentLabelHeader(text: "Sat",textColor: .brandOrange)
                 }
                 VStack {
-                    Circle().stroke(style: .init(lineWidth: 1,lineCap: .round,lineJoin: .round)).fill(Color.appColor).frame(width: 32,height: 32)
-                    ComponentLabelHeader(text: "Sun",textColor: .appColor)
+                    Circle().stroke(style: .init(lineWidth: 1,lineCap: .round,lineJoin: .round)).fill(Color.brandOrange).frame(width: 32,height: 32)
+                    ComponentLabelHeader(text: "Sun",textColor: .brandOrange)
                 }
                 VStack {
-                    Circle().stroke(style: .init(lineWidth: 1,lineCap: .round,lineJoin: .round)).fill(Color.appColor).frame(width: 32,height: 32)
-                    ComponentLabelHeader(text: "Mon",textColor: .appColor)
+                    Circle().stroke(style: .init(lineWidth: 1,lineCap: .round,lineJoin: .round)).fill(Color.brandOrange).frame(width: 32,height: 32)
+                    ComponentLabelHeader(text: "Mon",textColor: .brandOrange)
                 }
                 Spacer()
             }

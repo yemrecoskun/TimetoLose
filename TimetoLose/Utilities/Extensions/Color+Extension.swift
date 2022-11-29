@@ -8,6 +8,14 @@
 import SwiftUI
 
 extension Color {
+    static let lightGrey = Color(hex: "F7F8F8")
+    static let darkPurple = Color(hex: "A98CA6")
+    static let darkPing = Color(hex: "FCB29F")
+    static let darkYellow = Color(hex: "AC9801")
+    static let lightYellow = Color(hex: "FDDA02")
+    static let success = Color(hex: "24FF00")
+    static let failed = Color(hex: "FF0000")
+    static let lightAppColor = Color(hex: "FE7E6B")
     static let background = Color("background")
     static let brandOrange = Color("brandOrange")
 }

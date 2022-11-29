@@ -18,7 +18,7 @@ struct DashboardView: View {
                     FoodRecipesView().padding(.horizontal,16).padding(.top,5)
                 }.padding(.top,5)
                 Spacer()
-                BottomMenuView()
+                BottomBar()
             }.background(Color.background)
     }
 }

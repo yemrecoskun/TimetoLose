@@ -15,7 +15,7 @@ struct LabelImageView: View {
                 .frame(width: 60,height: 60)
                 .clipShape(Circle())
             VStack(alignment: .leading) {
-                ComponentLabelHeader(text: "Mercimek Çorbası",textColor: .appColor)
+                ComponentLabelHeader(text: "Mercimek Çorbası",textColor: .brandOrange)
                 ComponentLabelBody(text: "Description Description Description Description Description Description ",textColor: .black)
             }
         }.padding(20).background(Color.white).cornerRadius(22).shadow(radius: 2)
