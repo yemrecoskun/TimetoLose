@@ -58,6 +58,16 @@ struct AppText {
         static let fourthDietTitle = "Vegan"
         static let fourthDietHint = "I'dont eat animal products"
     }
+
+    struct AnySnackView {
+        static let header = "Do you have any snack?"
+        static let body = "We'll personalize recommendations based on your eating habits"
+        static let no = "No"
+        static let one = "1"
+        static let two = "2"
+        static let three = "3"
+        static let four = "4"
+    }
     
     static func getText(_ text: Text) -> String {
         return text.rawValue

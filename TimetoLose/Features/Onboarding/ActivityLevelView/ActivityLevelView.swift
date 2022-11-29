@@ -17,10 +17,12 @@ struct ActivityLevelView: View {
                 ComponentLabelHeader(text: AppText.ActivityLevelView.header, font: .bodyExtraLarge, textColor: .brandOrange)
                 ComponentLabelBody(text: AppText.ActivityLevelView.body, font: .bodyRegular, textColor: .brandOrange)
                 // MARK: Choices
-                ComponentButtonWithHintView(title: AppText.ActivityLevelView.firstActivityLevelTitle, hintText: AppText.ActivityLevelView.firstActivityLevelHint, width: buttonWidth, action: lightlyActiveButtonTapped)
-                ComponentButtonWithHintView(title: AppText.ActivityLevelView.secondActivityLevelTitle, hintText: AppText.ActivityLevelView.secondActivityLevelHint, width: buttonWidth, action: moderatelyActiveButtonTapped)
-                ComponentButtonWithHintView(title: AppText.ActivityLevelView.thirdActivityLevelTitle, hintText: AppText.ActivityLevelView.thirdActivityLevelHint, width: buttonWidth, action: activeButtonTapped)
-                ComponentButtonWithHintView(title: AppText.ActivityLevelView.fourthActivityLevelTitle, hintText: AppText.ActivityLevelView.fourthActivityLevelHint, width: buttonWidth, action: veryActiveButtonTapped)
+                VStack {
+                    ComponentButtonWithHintView(title: AppText.ActivityLevelView.firstActivityLevelTitle, hintText: AppText.ActivityLevelView.firstActivityLevelHint, width: buttonWidth, action: lightlyActiveButtonTapped)
+                    ComponentButtonWithHintView(title: AppText.ActivityLevelView.secondActivityLevelTitle, hintText: AppText.ActivityLevelView.secondActivityLevelHint, width: buttonWidth, action: moderatelyActiveButtonTapped)
+                    ComponentButtonWithHintView(title: AppText.ActivityLevelView.thirdActivityLevelTitle, hintText: AppText.ActivityLevelView.thirdActivityLevelHint, width: buttonWidth, action: activeButtonTapped)
+                    ComponentButtonWithHintView(title: AppText.ActivityLevelView.fourthActivityLevelTitle, hintText: AppText.ActivityLevelView.fourthActivityLevelHint, width: buttonWidth, action: veryActiveButtonTapped)
+                }
                 Spacer()
             }
             

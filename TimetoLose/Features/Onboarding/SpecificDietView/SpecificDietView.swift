@@ -17,10 +17,12 @@ struct SpecificDietView: View {
                 ComponentLabelHeader(text: AppText.SpecificDietView.header, font: .bodyExtraLarge, textColor: .brandOrange)
                 ComponentLabelBody(text: AppText.SpecificDietView.body, font: .bodyRegular, textColor: .brandOrange)
                 // MARK: Choices
-                ComponentButtonWithHintView(title: AppText.SpecificDietView.firstDietTitle, hintText: AppText.SpecificDietView.firstDietHint, width: buttonWidth, action: lightlyActiveButtonTapped)
-                ComponentButtonWithHintView(title: AppText.SpecificDietView.secondDietTitle, hintText: AppText.SpecificDietView.secondDietHint, width: buttonWidth, action: moderatelyActiveButtonTapped)
-                ComponentButtonWithHintView(title: AppText.SpecificDietView.thirdDietTitle, hintText: AppText.SpecificDietView.thirdDietHint, width: buttonWidth, action: activeButtonTapped)
-                ComponentButtonWithHintView(title: AppText.SpecificDietView.fourthDietTitle, hintText: AppText.SpecificDietView.fourthDietHint, width: buttonWidth, action: veryActiveButtonTapped)
+                VStack {
+                    ComponentButtonWithHintView(title: AppText.SpecificDietView.firstDietTitle, hintText: AppText.SpecificDietView.firstDietHint, width: buttonWidth, action: lightlyActiveButtonTapped)
+                    ComponentButtonWithHintView(title: AppText.SpecificDietView.secondDietTitle, hintText: AppText.SpecificDietView.secondDietHint, width: buttonWidth, action: moderatelyActiveButtonTapped)
+                    ComponentButtonWithHintView(title: AppText.SpecificDietView.thirdDietTitle, hintText: AppText.SpecificDietView.thirdDietHint, width: buttonWidth, action: activeButtonTapped)
+                    ComponentButtonWithHintView(title: AppText.SpecificDietView.fourthDietTitle, hintText: AppText.SpecificDietView.fourthDietHint, width: buttonWidth, action: veryActiveButtonTapped)
+                }
                 Spacer()
             }
             

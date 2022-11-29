@@ -13,6 +13,11 @@
 		44FAEB3328E7346D00A955EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FAEB3228E7346D00A955EA /* Persistence.swift */; };
 		44FAEB3628E7346D00A955EA /* TimetoLose.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44FAEB3428E7346D00A955EA /* TimetoLose.xcdatamodeld */; };
 		7C0056BF2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0056BE2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift */; };
+		7C0056C22935D04000CA6464 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0056C12935D04000CA6464 /* GenderView.swift */; };
+		7C8571C12936623E001154EF /* ActivityLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571C02936623E001154EF /* ActivityLevelView.swift */; };
+		7C8571C429366286001154EF /* ComponentButtonWithHintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571C329366286001154EF /* ComponentButtonWithHintView.swift */; };
+		7C8571C72936676B001154EF /* SpecificDietView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571C62936676B001154EF /* SpecificDietView.swift */; };
+		7C8571CA29366A19001154EF /* AnySnackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571C929366A19001154EF /* AnySnackView.swift */; };
 		7CFF756E2933715D001F0D5F /* BaseLabelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF756D2933715D001F0D5F /* BaseLabelProtocol.swift */; };
 		7CFF7578293371A3001F0D5F /* ComponentLabelBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF7575293371A3001F0D5F /* ComponentLabelBody.swift */; };
 		7CFF7579293371A3001F0D5F /* ComponentLabelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF7577293371A3001F0D5F /* ComponentLabelHeader.swift */; };
@@ -65,6 +70,11 @@
 		44FAEB3228E7346D00A955EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		44FAEB3528E7346D00A955EA /* TimetoLose.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimetoLose.xcdatamodel; sourceTree = "<group>"; };
 		7C0056BE2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentMultipleSelectionPrimaryButton.swift; sourceTree = "<group>"; };
+		7C0056C12935D04000CA6464 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		7C8571C02936623E001154EF /* ActivityLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLevelView.swift; sourceTree = "<group>"; };
+		7C8571C329366286001154EF /* ComponentButtonWithHintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentButtonWithHintView.swift; sourceTree = "<group>"; };
+		7C8571C62936676B001154EF /* SpecificDietView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificDietView.swift; sourceTree = "<group>"; };
+		7C8571C929366A19001154EF /* AnySnackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySnackView.swift; sourceTree = "<group>"; };
 		7CFF756D2933715D001F0D5F /* BaseLabelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLabelProtocol.swift; sourceTree = "<group>"; };
 		7CFF7575293371A3001F0D5F /* ComponentLabelBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentLabelBody.swift; sourceTree = "<group>"; };
 		7CFF7577293371A3001F0D5F /* ComponentLabelHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentLabelHeader.swift; sourceTree = "<group>"; };
@@ -170,6 +180,46 @@
 			path = ComponentMultipleSelectionPrimaryButton;
 			sourceTree = "<group>";
 		};
+		7C0056C02935D02D00CA6464 /* GenderView */ = {
+			isa = PBXGroup;
+			children = (
+				7C0056C12935D04000CA6464 /* GenderView.swift */,
+			);
+			path = GenderView;
+			sourceTree = "<group>";
+		};
+		7C8571BF2936622F001154EF /* ActivityLevelView */ = {
+			isa = PBXGroup;
+			children = (
+				7C8571C02936623E001154EF /* ActivityLevelView.swift */,
+			);
+			path = ActivityLevelView;
+			sourceTree = "<group>";
+		};
+		7C8571C229366256001154EF /* ComponentButtonWithHintView */ = {
+			isa = PBXGroup;
+			children = (
+				7C8571C329366286001154EF /* ComponentButtonWithHintView.swift */,
+			);
+			path = ComponentButtonWithHintView;
+			sourceTree = "<group>";
+		};
+		7C8571C529366757001154EF /* SpecificDietView */ = {
+			isa = PBXGroup;
+			children = (
+				7C8571C62936676B001154EF /* SpecificDietView.swift */,
+			);
+			path = SpecificDietView;
+			sourceTree = "<group>";
+		};
+		7C8571C829366A0C001154EF /* AnySnackView */ = {
+			isa = PBXGroup;
+			children = (
+				7C8571C929366A19001154EF /* AnySnackView.swift */,
+			);
+			path = AnySnackView;
+			sourceTree = "<group>";
+		};
 		7CFF75682933707E001F0D5F /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +237,10 @@
 			isa = PBXGroup;
 			children = (
 				7CFF756A2933712A001F0D5F /* GoalView */,
+				7C0056C02935D02D00CA6464 /* GenderView */,
+				7C8571BF2936622F001154EF /* ActivityLevelView */,
+				7C8571C529366757001154EF /* SpecificDietView */,
+				7C8571C829366A0C001154EF /* AnySnackView */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -282,6 +336,7 @@
 		7CFF759C293379F6001F0D5F /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				7C8571C229366256001154EF /* ComponentButtonWithHintView */,
 				7C0056BD2935C72E00CA6464 /* ComponentMultipleSelectionPrimaryButton */,
 				7CFF759D29337A03001F0D5F /* ComponentPrimaryButton */,
 			);
@@ -509,10 +564,12 @@
 			files = (
 				B6E3E42A293343DF0036ECE2 /* NetworkConstants.swift in Sources */,
 				B6E3E437293347490036ECE2 /* DashboardModel.swift in Sources */,
+				7C8571CA29366A19001154EF /* AnySnackView.swift in Sources */,
 				7CFF75A129337A2A001F0D5F /* CGFloat+Extension.swift in Sources */,
 				7CFF7579293371A3001F0D5F /* ComponentLabelHeader.swift in Sources */,
 				44FAEB3628E7346D00A955EA /* TimetoLose.xcdatamodeld in Sources */,
 				7CFF759F29337A03001F0D5F /* ComponentPrimaryButton.swift in Sources */,
+				7C8571C12936623E001154EF /* ActivityLevelView.swift in Sources */,
 				B6E3E43B293347660036ECE2 /* ProfileModel.swift in Sources */,
 				7CFF75A729337D31001F0D5F /* ComponentDivider.swift in Sources */,
 				B6E3E43D293347750036ECE2 /* ProfileService.swift in Sources */,
@@ -533,7 +590,10 @@
 				7CFF75A329337B9D001F0D5F /* UIScreen+Extension.swift in Sources */,
 				B6E3E430293345520036ECE2 /* Service.swift in Sources */,
 				7CFF756E2933715D001F0D5F /* BaseLabelProtocol.swift in Sources */,
+				7C0056C22935D04000CA6464 /* GenderView.swift in Sources */,
+				7C8571C429366286001154EF /* ComponentButtonWithHintView.swift in Sources */,
 				B6E3E435293347370036ECE2 /* DashboardView.swift in Sources */,
+				7C8571C72936676B001154EF /* SpecificDietView.swift in Sources */,
 				B6E3E42C293344010036ECE2 /* NetworkModel.swift in Sources */,
 				B6E3E44029334B590036ECE2 /* AppText.swift in Sources */,
 				7CFF7578293371A3001F0D5F /* ComponentLabelBody.swift in Sources */,
