@@ -12,11 +12,15 @@ struct ComponentLabelBody: View, BaseLabelProtocol {
     var font: Font = .bodyPrimary
     var textColor: Color = .gray
     var textAlignment: TextAlignment = .center
+    private let textMinimumScale = 0.5
+    var lineLimit: Int? = nil
 
     var body: some View {
         Text(text)
             .font(font)
             .foregroundColor(textColor)
             .multilineTextAlignment(textAlignment)
+            .minimumScaleFactor(textMinimumScale)
+            .lineLimit(lineLimit)
     }
 }
