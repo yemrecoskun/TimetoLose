@@ -15,8 +15,8 @@ struct GenderView: View {
         ZStack {
             Color.background.ignoresSafeArea()
             VStack {
-                ComponentLabelHeader(text: AppText.GoalView.header, font: .bodyExtraLarge, textColor: .brandOrange)
-                ComponentLabelBody(text: AppText.GoalView.body, font: .bodyRegular, textColor: .brandOrange)
+                ComponentLabelHeader(text: AppText.GenderView.header, font: .bodyExtraLarge, textColor: .brandOrange)
+                ComponentLabelBody(text: AppText.GenderView.body, font: .bodyRegular, textColor: .brandOrange)
                 // MARK: Choices
                 VStack {
                     ComponentPrimaryButton(title: AppText.GenderView.female,showLeftImage: true, leftImageURL: AppIcon.Name.female.rawValue, width: buttonWidth, titleAlignment: .leading, isDisabled: $isDisabled, action: femaleButtonTapped)

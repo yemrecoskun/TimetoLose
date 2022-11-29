@@ -27,8 +27,23 @@ struct AppText {
     }
 
     struct GenderView {
+        static let header = "What's your gender?"
+        static let body = "We need to know your gender to accurately calculate your daily calorie goal"
         static let female = "Female"
         static let male = "Male"
+    }
+
+    struct ActivityLevelView {
+        static let header = "How active are you?"
+        static let body = "Knowing your daily activity level helps us calculate your calorie need more accurately"
+        static let firstActivityLevelTitle = "Lightly active"
+        static let firstActivityLevelHint = "Mostly sitting, e.g office worker"
+        static let secondActivityLevelTitle = "Moderately active"
+        static let secondActivityLevelHint = "Mostly standing, e.g teacher"
+        static let thirdActivityLevelTitle = "Active"
+        static let thirdActivityLevelHint = "Mostly walking, e.g salesperson"
+        static let fourthActivityLevelTitle = "Very active"
+        static let fourthActivityLevelHint = "Physically demanding, e.g builder"
     }
     
     static func getText(_ text: Text) -> String {
