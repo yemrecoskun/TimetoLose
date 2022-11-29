@@ -32,7 +32,7 @@ struct BottomMenuView: View {
                 Button(action: {
                     
                 }) {
-                    AppIcon.getIcon(.profile)?.resizable().frame(width: 24,height: 24).foregroundColor(.appColor).background(Color.appColor).padding()
+                    AppIcon.getIcon(.profile)?.resizable().frame(width: 24,height: 24).foregroundColor(.appColor).padding()
                 }
                 Spacer()
             }.padding(2).background(Color.white).cornerRadius(4)
