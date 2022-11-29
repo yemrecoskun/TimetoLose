@@ -19,10 +19,10 @@ struct GoalView: View {
                 ComponentLabelBody(text: AppText.GoalView.body, font: .bodyRegular, textColor: .brandOrange)
                 // MARK: Choices
                 VStack {
-                    ComponentPrimaryButton(title: AppText.GoalView.firstChoice, width: buttonWidth, isDisabled: $isButtonDisabled, action: buttonAction)
-                    ComponentPrimaryButton(title: AppText.GoalView.secondChoice, width: buttonWidth, isDisabled: $isButtonDisabled, action: buttonAction)
-                    ComponentPrimaryButton(title: AppText.GoalView.thirdChoice, width: buttonWidth, isDisabled: $isButtonDisabled, action: buttonAction)
-                    ComponentPrimaryButton(title: AppText.GoalView.fourthChoice, width: buttonWidth, isDisabled: $isButtonDisabled, action: buttonAction)
+                    ComponentPrimaryButton(title: AppText.GoalView.firstChoice, width: buttonWidth, titleAlignment: .leading, isDisabled: $isButtonDisabled, action: buttonAction)
+                    ComponentPrimaryButton(title: AppText.GoalView.secondChoice, width: buttonWidth, titleAlignment: .leading, isDisabled: $isButtonDisabled, action: buttonAction)
+                    ComponentPrimaryButton(title: AppText.GoalView.thirdChoice, width: buttonWidth, titleAlignment: .leading, isDisabled: $isButtonDisabled, action: buttonAction)
+                    ComponentPrimaryButton(title: AppText.GoalView.fourthChoice, width: buttonWidth, titleAlignment: .leading, isDisabled: $isButtonDisabled, action: buttonAction)
                 }
                 Spacer()
                 ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonDisabled, action: buttonNextTapped)

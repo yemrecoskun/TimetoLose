@@ -18,13 +18,14 @@ struct ComponentPrimaryButton: View {
     var cornerRadius: CGFloat = .regularPoint
     var width: CGFloat = .doubleLargePoint
     var height: CGFloat = .largePoint
+    var titleAlignment: Alignment = .center
     var isDisabled: Binding<Bool>
     let action: () -> Void
 
     var body: some View {
         Button(action: action, label: {
             Text(title)
-                .frame(width: width, height: height)
+                .frame(width: width, height: height, alignment: titleAlignment)
                 .font(font)
                 .padding(.horizontal, horizontalPadding)
                 .padding(.vertical, verticalPadding)
