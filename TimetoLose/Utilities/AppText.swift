@@ -25,6 +25,11 @@ struct AppText {
         static let thirdChoice = "Stay motivated"
         static let fourthChoice = "Feel better about my body"
     }
+
+    struct GenderView {
+        static let female = "Female"
+        static let male = "Male"
+    }
     
     static func getText(_ text: Text) -> String {
         return text.rawValue
