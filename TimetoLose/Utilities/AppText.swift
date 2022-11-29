@@ -45,6 +45,19 @@ struct AppText {
         static let fourthActivityLevelTitle = "Very active"
         static let fourthActivityLevelHint = "Physically demanding, e.g builder"
     }
+
+    struct SpecificDietView {
+        static let header = "Do you follow a specific diet?"
+        static let body = "We'll adapt our recommendations to your preferences"
+        static let firstDietTitle = "Classic"
+        static let firstDietHint = "I have no dietary preferences"
+        static let secondDietTitle = "Pescaterian"
+        static let secondDietHint = "I eat seafood but not meat"
+        static let thirdDietTitle = "Vegetarian"
+        static let thirdDietHint = "I'dont eat any meat or seafood"
+        static let fourthDietTitle = "Vegan"
+        static let fourthDietHint = "I'dont eat animal products"
+    }
     
     static func getText(_ text: Text) -> String {
         return text.rawValue
