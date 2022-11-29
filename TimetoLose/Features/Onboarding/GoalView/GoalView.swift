@@ -35,19 +35,19 @@ struct GoalView: View {
     }
 
     private func firstSelectionAction() {
-        isFirstChoiceSelected = !isFirstChoiceSelected
+        isFirstChoiceSelected.toggle()
     }
 
     private func secondSelectionAction() {
-        isSecondChoiceSelected = !isSecondChoiceSelected
+        isSecondChoiceSelected.toggle()
     }
 
     private func thirdSelectionAction() {
-        isThirdChoiceSelected = !isThirdChoiceSelected
+        isThirdChoiceSelected.toggle()
     }
 
     private func fourthSelectionAction() {
-        isFourthChoiceSelected = !isFourthChoiceSelected
+        isFourthChoiceSelected.toggle()
     }
 
     private func buttonNextTapped() {
