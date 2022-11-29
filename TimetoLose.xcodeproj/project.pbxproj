@@ -12,6 +12,7 @@
 		44FAEB3128E7346D00A955EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FAEB3028E7346D00A955EA /* Preview Assets.xcassets */; };
 		44FAEB3328E7346D00A955EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FAEB3228E7346D00A955EA /* Persistence.swift */; };
 		44FAEB3628E7346D00A955EA /* TimetoLose.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44FAEB3428E7346D00A955EA /* TimetoLose.xcdatamodeld */; };
+		7C0056BF2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0056BE2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift */; };
 		7CFF756E2933715D001F0D5F /* BaseLabelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF756D2933715D001F0D5F /* BaseLabelProtocol.swift */; };
 		7CFF7578293371A3001F0D5F /* ComponentLabelBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF7575293371A3001F0D5F /* ComponentLabelBody.swift */; };
 		7CFF7579293371A3001F0D5F /* ComponentLabelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF7577293371A3001F0D5F /* ComponentLabelHeader.swift */; };
@@ -63,6 +64,7 @@
 		44FAEB3028E7346D00A955EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44FAEB3228E7346D00A955EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		44FAEB3528E7346D00A955EA /* TimetoLose.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimetoLose.xcdatamodel; sourceTree = "<group>"; };
+		7C0056BE2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentMultipleSelectionPrimaryButton.swift; sourceTree = "<group>"; };
 		7CFF756D2933715D001F0D5F /* BaseLabelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLabelProtocol.swift; sourceTree = "<group>"; };
 		7CFF7575293371A3001F0D5F /* ComponentLabelBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentLabelBody.swift; sourceTree = "<group>"; };
 		7CFF7577293371A3001F0D5F /* ComponentLabelHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentLabelHeader.swift; sourceTree = "<group>"; };
@@ -158,6 +160,14 @@
 				44FAEB3028E7346D00A955EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C0056BD2935C72E00CA6464 /* ComponentMultipleSelectionPrimaryButton */ = {
+			isa = PBXGroup;
+			children = (
+				7C0056BE2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift */,
+			);
+			path = ComponentMultipleSelectionPrimaryButton;
 			sourceTree = "<group>";
 		};
 		7CFF75682933707E001F0D5F /* UIComponents */ = {
@@ -272,6 +282,7 @@
 		7CFF759C293379F6001F0D5F /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				7C0056BD2935C72E00CA6464 /* ComponentMultipleSelectionPrimaryButton */,
 				7CFF759D29337A03001F0D5F /* ComponentPrimaryButton */,
 			);
 			path = Buttons;
@@ -515,6 +526,7 @@
 				7CFF75992933779E001F0D5F /* Color+Extension.swift in Sources */,
 				B6E3E42E2933440F0036ECE2 /* ApiManager.swift in Sources */,
 				B6E3E45329354A9D0036ECE2 /* WeeklyStreakView.swift in Sources */,
+				7C0056BF2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift in Sources */,
 				44FAEB3328E7346D00A955EA /* Persistence.swift in Sources */,
 				B6E3E4442933557C0036ECE2 /* AppColor.swift in Sources */,
 				B6E3E428293343D30036ECE2 /* NetworkConnection.swift in Sources */,

@@ -16,6 +16,8 @@ struct AppIcon {
         case profile = "profile"
         case home = "home"
         case measure = "measure"
+        case unselectedCheckMark = "unselected_checkmark"
+        case selectedCheckMark = "selected_checkmark"
 }
     
     static func getIcon(_ name: Name,
