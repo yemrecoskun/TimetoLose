@@ -18,6 +18,7 @@
 		7C8571C429366286001154EF /* ComponentButtonWithHintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571C329366286001154EF /* ComponentButtonWithHintView.swift */; };
 		7C8571C72936676B001154EF /* SpecificDietView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571C62936676B001154EF /* SpecificDietView.swift */; };
 		7C8571CA29366A19001154EF /* AnySnackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571C929366A19001154EF /* AnySnackView.swift */; };
+		7C8571CD29366C62001154EF /* AnyDiseaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571CC29366C62001154EF /* AnyDiseaseView.swift */; };
 		7CFF756E2933715D001F0D5F /* BaseLabelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF756D2933715D001F0D5F /* BaseLabelProtocol.swift */; };
 		7CFF7578293371A3001F0D5F /* ComponentLabelBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF7575293371A3001F0D5F /* ComponentLabelBody.swift */; };
 		7CFF7579293371A3001F0D5F /* ComponentLabelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF7577293371A3001F0D5F /* ComponentLabelHeader.swift */; };
@@ -75,6 +76,7 @@
 		7C8571C329366286001154EF /* ComponentButtonWithHintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentButtonWithHintView.swift; sourceTree = "<group>"; };
 		7C8571C62936676B001154EF /* SpecificDietView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificDietView.swift; sourceTree = "<group>"; };
 		7C8571C929366A19001154EF /* AnySnackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySnackView.swift; sourceTree = "<group>"; };
+		7C8571CC29366C62001154EF /* AnyDiseaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDiseaseView.swift; sourceTree = "<group>"; };
 		7CFF756D2933715D001F0D5F /* BaseLabelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLabelProtocol.swift; sourceTree = "<group>"; };
 		7CFF7575293371A3001F0D5F /* ComponentLabelBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentLabelBody.swift; sourceTree = "<group>"; };
 		7CFF7577293371A3001F0D5F /* ComponentLabelHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentLabelHeader.swift; sourceTree = "<group>"; };
@@ -220,6 +222,14 @@
 			path = AnySnackView;
 			sourceTree = "<group>";
 		};
+		7C8571CB29366C4A001154EF /* AnyDiseaseView */ = {
+			isa = PBXGroup;
+			children = (
+				7C8571CC29366C62001154EF /* AnyDiseaseView.swift */,
+			);
+			path = AnyDiseaseView;
+			sourceTree = "<group>";
+		};
 		7CFF75682933707E001F0D5F /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +251,7 @@
 				7C8571BF2936622F001154EF /* ActivityLevelView */,
 				7C8571C529366757001154EF /* SpecificDietView */,
 				7C8571C829366A0C001154EF /* AnySnackView */,
+				7C8571CB29366C4A001154EF /* AnyDiseaseView */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -562,6 +573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C8571CD29366C62001154EF /* AnyDiseaseView.swift in Sources */,
 				B6E3E42A293343DF0036ECE2 /* NetworkConstants.swift in Sources */,
 				B6E3E437293347490036ECE2 /* DashboardModel.swift in Sources */,
 				7C8571CA29366A19001154EF /* AnySnackView.swift in Sources */,
