@@ -117,11 +117,6 @@ public struct BottomBar : View {
 
 struct BottomBar_Previews : PreviewProvider {
     static var previews: some View {
-        BottomBar(selectedIndex: 0, items: [
-            BottomBarItem(icon: "house.fill", title: "Home", color: .lightAppColor),
-            BottomBarItem(icon: "lines.measurement.horizontal", title: "Likes", color: .lightAppColor),
-            BottomBarItem(icon: "figure.socialdance", title: "Search", color: .lightAppColor),
-            BottomBarItem(icon: "person.fill", title: "Profile", color: .lightAppColor)
-        ])
+        BottomBar()
     }
 }

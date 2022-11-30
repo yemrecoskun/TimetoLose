@@ -61,6 +61,7 @@
 		B6E3E456293560540036ECE2 /* FoodRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E455293560540036ECE2 /* FoodRecipesView.swift */; };
 		B6E3E459293562E60036ECE2 /* LabelImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E458293562E60036ECE2 /* LabelImageView.swift */; };
 		B6E3E46C293688170036ECE2 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E46B293688170036ECE2 /* RoundedCorners.swift */; };
+		B6E9C6162937FAC60077A2FB /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C6152937FAC60077A2FB /* TabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +121,7 @@
 		B6E3E455293560540036ECE2 /* FoodRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecipesView.swift; sourceTree = "<group>"; };
 		B6E3E458293562E60036ECE2 /* LabelImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelImageView.swift; sourceTree = "<group>"; };
 		B6E3E46B293688170036ECE2 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
+		B6E9C6152937FAC60077A2FB /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -463,6 +465,7 @@
 			isa = PBXGroup;
 			children = (
 				B6E3E44C2933FD5C0036ECE2 /* BottomMenuView.swift */,
+				B6E9C6152937FAC60077A2FB /* TabView.swift */,
 			);
 			path = BottomMenu;
 			sourceTree = "<group>";
@@ -607,6 +610,7 @@
 				7C0056BF2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift in Sources */,
 				44FAEB3328E7346D00A955EA /* Persistence.swift in Sources */,
 				B6E3E428293343D30036ECE2 /* NetworkConnection.swift in Sources */,
+				B6E9C6162937FAC60077A2FB /* TabView.swift in Sources */,
 				7CFF75A329337B9D001F0D5F /* UIScreen+Extension.swift in Sources */,
 				B6E3E430293345520036ECE2 /* Service.swift in Sources */,
 				7CFF756E2933715D001F0D5F /* BaseLabelProtocol.swift in Sources */,

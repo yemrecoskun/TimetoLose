@@ -24,8 +24,7 @@ struct FoodRecipesView: View {
                     .frame(width: UIScreen.screenWidth*0.4)
                     .background(Color.brandOrange)
                     .cornerRadius(20)
-                    .foregroundColor(.white)
-                    .colorMultiply(.white)
+                    .accentColor(.white)
                 Spacer()
             }
             LabelImageView()
