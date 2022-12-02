@@ -80,6 +80,9 @@
 		B6E9C649293A1C4A0077A2FB /* BarChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C638293A1C4A0077A2FB /* BarChartRow.swift */; };
 		B6E9C64A293A1C4A0077A2FB /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C639293A1C4A0077A2FB /* LabelView.swift */; };
 		B6E9C64B293A1C4A0077A2FB /* BarChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C63A293A1C4A0077A2FB /* BarChartCell.swift */; };
+		B6E9C64E293A85500077A2FB /* CaloriesStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C64D293A85500077A2FB /* CaloriesStatusView.swift */; };
+		B6E9C650293A855E0077A2FB /* LabelButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C64F293A855E0077A2FB /* LabelButtonView.swift */; };
+		B6E9C653293A9CA20077A2FB /* WaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C652293A9CA20077A2FB /* WaterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -158,6 +161,9 @@
 		B6E9C638293A1C4A0077A2FB /* BarChartRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartRow.swift; sourceTree = "<group>"; };
 		B6E9C639293A1C4A0077A2FB /* LabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		B6E9C63A293A1C4A0077A2FB /* BarChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartCell.swift; sourceTree = "<group>"; };
+		B6E9C64D293A85500077A2FB /* CaloriesStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesStatusView.swift; sourceTree = "<group>"; };
+		B6E9C64F293A855E0077A2FB /* LabelButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelButtonView.swift; sourceTree = "<group>"; };
+		B6E9C652293A9CA20077A2FB /* WaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -463,6 +469,8 @@
 		B6E3E433293346C50036ECE2 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				B6E9C651293A9C960077A2FB /* WaterView */,
+				B6E9C64C293A853C0077A2FB /* CaloriesStatus */,
 				B6E9C623293A1BB30077A2FB /* WeeklyStatusView */,
 				B6E3E45129354A860036ECE2 /* WeeklyStreakView */,
 				B6E3E4482933935E0036ECE2 /* SummaryDayView */,
@@ -596,6 +604,23 @@
 			path = BarChart;
 			sourceTree = "<group>";
 		};
+		B6E9C64C293A853C0077A2FB /* CaloriesStatus */ = {
+			isa = PBXGroup;
+			children = (
+				B6E9C64D293A85500077A2FB /* CaloriesStatusView.swift */,
+				B6E9C64F293A855E0077A2FB /* LabelButtonView.swift */,
+			);
+			path = CaloriesStatus;
+			sourceTree = "<group>";
+		};
+		B6E9C651293A9C960077A2FB /* WaterView */ = {
+			isa = PBXGroup;
+			children = (
+				B6E9C652293A9CA20077A2FB /* WaterView.swift */,
+			);
+			path = WaterView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -680,9 +705,11 @@
 			files = (
 				7C8571CD29366C62001154EF /* AnyDiseaseView.swift in Sources */,
 				B6E3E42A293343DF0036ECE2 /* NetworkConstants.swift in Sources */,
+				B6E9C653293A9CA20077A2FB /* WaterView.swift in Sources */,
 				B6E3E437293347490036ECE2 /* DashboardModel.swift in Sources */,
 				7C8571CA29366A19001154EF /* AnySnackView.swift in Sources */,
 				B6E9C649293A1C4A0077A2FB /* BarChartRow.swift in Sources */,
+				B6E9C650293A855E0077A2FB /* LabelButtonView.swift in Sources */,
 				B6E3E46C293688170036ECE2 /* RoundedCorners.swift in Sources */,
 				B6E9C642293A1C4A0077A2FB /* MultiLineChartView.swift in Sources */,
 				7CFF75A129337A2A001F0D5F /* CGFloat+Extension.swift in Sources */,
@@ -702,6 +729,7 @@
 				7CFF75952933745C001F0D5F /* Font+Extension.swift in Sources */,
 				B6E9C644293A1C4A0077A2FB /* PieChartRow.swift in Sources */,
 				B6E3E44229334B690036ECE2 /* AppIcon.swift in Sources */,
+				B6E9C64E293A85500077A2FB /* CaloriesStatusView.swift in Sources */,
 				B6E9C63B293A1C4A0077A2FB /* Helpers.swift in Sources */,
 				B6E3E44D2933FD5C0036ECE2 /* BottomMenuView.swift in Sources */,
 				B6E3E4392933475A0036ECE2 /* ProfileView.swift in Sources */,

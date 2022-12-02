@@ -12,10 +12,12 @@ struct DashboardView: View {
             VStack {
                 Spacer()
                 ScrollView {
-                    WeeklyStreakView().padding(.horizontal,16).padding(.top,5)
-                    SummaryDayView().padding(.horizontal,16).padding(.top,5)
-                    WeeklyStatusView().padding(.horizontal,16).padding(.top,5)
-                    FoodRecipesView().padding(.horizontal,16).padding(.top,5)
+                    WeeklyStreakView().padding(.horizontal,8).padding(.top,5)
+                    SummaryDayView().padding(.horizontal,8).padding(.top,5)
+                    CaloriesStatusView().padding(.horizontal,8).padding(.top,5)
+                    WaterView().padding(.horizontal,8).padding(.top,5)
+                    WeeklyStatusView().padding(.horizontal,8).padding(.top,5)
+                    FoodRecipesView().padding(.horizontal,8).padding(.top,5)
                 }.padding(.top,5)
                 Spacer()
             }.background(Color.background)

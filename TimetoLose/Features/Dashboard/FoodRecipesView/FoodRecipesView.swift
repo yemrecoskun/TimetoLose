@@ -13,7 +13,6 @@ struct FoodRecipesView: View {
     var body: some View {
         VStack {
             HStack {
-                Spacer()
                 ComponentLabelHeader(text: "Yemek Tarifleri",textColor: .brandOrange)
                 Spacer()
                 Picker("", selection: $picker) {
@@ -25,7 +24,6 @@ struct FoodRecipesView: View {
                     .background(Color.brandOrange)
                     .cornerRadius(20)
                     .accentColor(.white)
-                Spacer()
             }
             LabelImageView()
             LabelImageView()
