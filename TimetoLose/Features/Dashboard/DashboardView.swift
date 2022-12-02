@@ -14,6 +14,7 @@ struct DashboardView: View {
                 ScrollView {
                     WeeklyStreakView().padding(.horizontal,16).padding(.top,5)
                     SummaryDayView().padding(.horizontal,16).padding(.top,5)
+                    WeeklyStatusView().padding(.horizontal,16).padding(.top,5)
                     FoodRecipesView().padding(.horizontal,16).padding(.top,5)
                 }.padding(.top,5)
                 Spacer()
