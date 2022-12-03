@@ -13,7 +13,6 @@ struct TimetoLoseApp: App {
 
     var body: some Scene {
         WindowGroup {
-            //DashboardView().environment(\.managedObjectContext, persistenceController.container.viewContext)
             //BottomBar()
             TabViews()
         }

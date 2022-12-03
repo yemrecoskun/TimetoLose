@@ -20,7 +20,7 @@ struct TabViews: View {
         case 0:
             return AnyView(DashboardView())
         case 1:
-            return AnyView(DashboardView())
+            return AnyView(MeasureView())
         case 2:
             return AnyView(DashboardView())
         case 3:
@@ -36,10 +36,11 @@ struct TabViews: View {
     var body: some View {
         
         VStack {
+            Spacer()
             ProfileView().padding(.horizontal,16).padding(.vertical,30)
             TabView {
                 ForEach(0..<items.count) { index in
-                    menuView(at: index)
+                    menuView(at: index).background(Color.background)
                         .tabItem{
                             self.itemView(at: index)
                         }

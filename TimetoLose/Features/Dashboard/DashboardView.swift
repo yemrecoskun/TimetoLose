@@ -10,7 +10,6 @@ import SwiftUI
 struct DashboardView: View {
     var body: some View {
             VStack {
-                Spacer()
                 ScrollView {
                     WeeklyStreakView().padding(.horizontal,8).padding(.top,5)
                     SummaryDayView().padding(.horizontal,8).padding(.top,5)
@@ -18,9 +17,9 @@ struct DashboardView: View {
                     WaterView().padding(.horizontal,8).padding(.top,5)
                     WeeklyStatusView().padding(.horizontal,8).padding(.top,5)
                     FoodRecipesView().padding(.horizontal,8).padding(.top,5)
+                    Spacer()
                 }.padding(.top,5)
-                Spacer()
-            }.background(Color.background)
+            }
     }
 }
 

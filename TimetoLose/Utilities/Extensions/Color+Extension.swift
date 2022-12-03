@@ -18,6 +18,7 @@ extension Color {
     static let lightAppColor = Color(hex: "FE7E6B")
     static let background = Color("background")
     static let brandOrange = Color("brandOrange")
+    static let grayText = Color(hex: "ADA4A5")
 }
 
 extension Color {

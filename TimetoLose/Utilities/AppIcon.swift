@@ -20,6 +20,7 @@ struct AppIcon {
         case selectedCheckMark = "selected_checkmark"
         case female = "female"
         case male = "male"
+        case body = "body"
 }
     
     static func getIcon(_ name: Name,

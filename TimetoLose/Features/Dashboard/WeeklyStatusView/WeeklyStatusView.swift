@@ -39,8 +39,7 @@ struct WeeklyStatusView: View {
             }
             HStack {
                 VStack(alignment: .leading) {
-                    ComponentLabelBody(text: "Hedef Kilo : 70",textColor: .brandOrange)
-                    ComponentLabelBody(text: "Hedefinize 5 hafta kaldı",textColor: .brandOrange)
+                    ComponentLabelBody(text: "Hedef Kilo : 70 \n Hedefinize 5 hafta kaldı",textColor: .brandOrange)
                 }
                 Spacer()
                 ComponentLabelBody(text: "Aralık \n 25", font: .bodyRegularBold,textColor: .white).padding(12).background(Color.brandOrange).cornerRadius(25)

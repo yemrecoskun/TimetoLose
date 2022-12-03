@@ -102,16 +102,27 @@ public struct BottomBar : View {
     }
     
     public var body: some View {
-        HStack(alignment: .bottom) {
-            ForEach(0..<items.count) { index in
-                self.itemView(at: index)
-                
-                if index != self.items.count-1 {
-                    Spacer()
-                }
+        VStack {
+            ProfileView().padding(.horizontal,16).padding(.vertical,30)
+            switch(selectedIndex) {
+                case 0: DashboardView()
+                case 1: MeasureView()
+                case 2: DashboardView()
+                case 3: DashboardView()
+            default:
+                DashboardView()
             }
-        }.background(.white)
-            .animation(.default, value: selectedIndex)
+            HStack(alignment: .bottom) {
+                ForEach(0..<items.count) { index in
+                    self.itemView(at: index)
+                    
+                    if index != self.items.count-1 {
+                        Spacer()
+                    }
+                }
+            }.background(.white)
+                .animation(.default, value: selectedIndex)
+        }.background(Color.background)
     }
 }
 
