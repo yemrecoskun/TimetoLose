@@ -103,12 +103,12 @@ public struct BottomBar : View {
     
     public var body: some View {
         VStack {
-            ProfileView().padding(.horizontal,16).padding(.vertical,30)
+            ProfileBar().padding(.horizontal,16).padding(.vertical,30)
             switch(selectedIndex) {
                 case 0: DashboardView()
                 case 1: MeasureView()
                 case 2: DashboardView()
-                case 3: DashboardView()
+                case 3: ProfileView()
             default:
                 DashboardView()
             }

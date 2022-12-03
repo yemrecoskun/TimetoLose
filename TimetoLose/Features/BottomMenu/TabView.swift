@@ -24,7 +24,7 @@ struct TabViews: View {
         case 2:
             return AnyView(DashboardView())
         case 3:
-            return AnyView(DashboardView())
+            return AnyView(ProfileView())
         default:
             return AnyView(DashboardView())
         }
@@ -37,7 +37,7 @@ struct TabViews: View {
         
         VStack {
             Spacer()
-            ProfileView().padding(.horizontal,16).padding(.vertical,30)
+            ProfileBar().padding(.horizontal,16).padding(.vertical,30)
             TabView {
                 ForEach(0..<items.count) { index in
                     menuView(at: index).background(Color.background)
