@@ -29,11 +29,11 @@ struct AnyMedicationView: View {
                     VStack {
                         ComponentMultipleSelectionPrimaryButton(title: AppText.AnyMedicationView.no, isSelected: $isNoMedicationSelecected, unselectedImageURL: "", selectedImageURL: "", action: buttonNextTapped)
                         ComponentMultipleSelectionPrimaryButton(title: AppText.AnyMedicationView.vitaminAndMineral, isSelected: $isVitaminAndMineralSelected, action: vitaminAndMineralAction)
-                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.hypertension, isSelected: $isHormoneSelected, action: hormoneAction)
-                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.hypotension, isSelected: $isAntibioticSelected, action: antibioticAction)
-                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.nephropathy, isSelected: $isAnxietySelected, action: anxietyAction)
-                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.liver, isSelected: $isSupplementSelected, action: supplementAction)
-                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.cancer, isSelected: $isOtherMedicationSelected, action: otherMeticationAction)
+                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyMedicationView.hormone, isSelected: $isHormoneSelected, action: hormoneAction)
+                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyMedicationView.antibiotic, isSelected: $isAntibioticSelected, action: antibioticAction)
+                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyMedicationView.anxiety, isSelected: $isAnxietySelected, action: anxietyAction)
+                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyMedicationView.supplement, isSelected: $isSupplementSelected, action: supplementAction)
+                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyMedicationView.other, isSelected: $isOtherMedicationSelected, action: otherMeticationAction)
                     }
                     Spacer()
                     ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)

@@ -96,6 +96,18 @@ struct AppText {
         static let other = "Other"
     }
 
+    struct AnyAllergyView {
+        static let header = "Do you have any allergies?"
+        static let body = "We'll personalize recommendations based on your health conditions."
+        static let no = "No allergies"
+        static let gluten = "Gluten intolerant"
+        static let wheat = "Wheat intolerant"
+        static let lactose = "Lactose intolerant"
+        static let egg = "Allergic to egg"
+        static let fish = "Allergic to fish"
+        static let nuts = "Allergic to nuts"
+    }
+
     static func getText(_ text: Text) -> String {
         return text.rawValue
     }
