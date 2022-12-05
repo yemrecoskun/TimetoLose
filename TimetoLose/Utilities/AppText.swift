@@ -71,7 +71,7 @@ struct AppText {
 
     struct AnyDiseaseView {
         static let header = "Do you have any disease?"
-        static let body = "We'll personalize recommendation based on your health condition."
+        static let body = "We'll personalize recommendation based on your health conditions."
         static let noDisease = "No disease"
         static let diabetes = "Diabetes"
         static let hypertension = "Hypertension"
@@ -81,6 +81,18 @@ struct AppText {
         static let cancer = "Cancer"
         static let autoImmune = "Auto-Immune"
         static let metabolic = "Metabolic"
+        static let other = "Other"
+    }
+
+    struct AnyMedicationView {
+        static let header = "Are you taking any medications?"
+        static let body = "We'll personalize recommendations based on your health conditions."
+        static let no = "No medications"
+        static let vitaminAndMineral = "Vitamins and Minerals"
+        static let hormone = "Hormones"
+        static let antibiotic = "Antibiotics"
+        static let anxiety = "Anxiety Medications"
+        static let supplement = "Supplement"
         static let other = "Other"
     }
 

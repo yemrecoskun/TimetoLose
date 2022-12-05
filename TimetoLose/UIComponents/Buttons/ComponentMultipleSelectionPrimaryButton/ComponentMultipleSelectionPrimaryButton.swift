@@ -11,8 +11,8 @@ struct ComponentMultipleSelectionPrimaryButton: View {
     let title: String
     var font: Font = .bodyRegular
     var isSelected: Binding<Bool>
-    let unselectedImageURL: String
-    let selectedImageURL: String
+    var unselectedImageURL = AppIcon.Name.unselectedCheckMark.rawValue
+    var selectedImageURL = AppIcon.Name.selectedCheckMark.rawValue
     var titleColor: Color = .white
     var horizontalPadding: CGFloat = .regularPoint
     var verticalPadding: CGFloat = .regularPoint

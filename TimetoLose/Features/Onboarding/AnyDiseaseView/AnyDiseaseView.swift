@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AnyDiseaseView: View {
-    @State private var isButtonDisabled = false
+    @State private var isButtonNextDisabled = false
     @State private var isNoDiseaseSelected = false
     @State private var isDiabetesSelected = false
     @State private var isHypertensionSelected = false
@@ -31,18 +31,18 @@ struct AnyDiseaseView: View {
                     // MARK: Choices
                     VStack {
                         ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.noDisease, isSelected: $isNoDiseaseSelected, unselectedImageURL: "", selectedImageURL: "", action: buttonNextTapped)
-                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.diabetes, isSelected: $isDiabetesSelected, unselectedImageURL: AppIcon.Name.unselectedCheckMark.rawValue, selectedImageURL: AppIcon.Name.selectedCheckMark.rawValue, action: diabetesSelectionAction)
-                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.hypertension, isSelected: $isHypertensionSelected, unselectedImageURL: AppIcon.Name.unselectedCheckMark.rawValue, selectedImageURL: AppIcon.Name.selectedCheckMark.rawValue, action: hypertensionSelectionAction)
-                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.hypotension, isSelected: $isHypotensionSelected, unselectedImageURL: AppIcon.Name.unselectedCheckMark.rawValue, selectedImageURL: AppIcon.Name.selectedCheckMark.rawValue, action: hypotensionSelectionAction)
-                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.nephropathy, isSelected: $isNephropathySelected, unselectedImageURL: AppIcon.Name.unselectedCheckMark.rawValue, selectedImageURL: AppIcon.Name.selectedCheckMark.rawValue, action: nephropathySelectionAction)
-                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.liver, isSelected: $isLiverSelected, unselectedImageURL: AppIcon.Name.unselectedCheckMark.rawValue, selectedImageURL: AppIcon.Name.selectedCheckMark.rawValue, action: liverSelectionAction)
-                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.cancer, isSelected: $isCancerSelected, unselectedImageURL: AppIcon.Name.unselectedCheckMark.rawValue, selectedImageURL: AppIcon.Name.selectedCheckMark.rawValue, action: cancerSelectionAction)
-                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.autoImmune, isSelected: $isAutoImmuneSelected, unselectedImageURL: AppIcon.Name.unselectedCheckMark.rawValue, selectedImageURL: AppIcon.Name.selectedCheckMark.rawValue, action: autoImmuneSelectionAction)
-                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.metabolic, isSelected: $isMetabolicSelected, unselectedImageURL: AppIcon.Name.unselectedCheckMark.rawValue, selectedImageURL: AppIcon.Name.selectedCheckMark.rawValue, action: metabolicSelectionAction)
-                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.other, isSelected: $isOtherSelected, unselectedImageURL: AppIcon.Name.unselectedCheckMark.rawValue, selectedImageURL: AppIcon.Name.selectedCheckMark.rawValue, action: otherSelectionAction)
+                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.diabetes, isSelected: $isDiabetesSelected, action: diabetesSelectionAction)
+                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.hypertension, isSelected: $isHypertensionSelected, action: hypertensionSelectionAction)
+                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.hypotension, isSelected: $isHypotensionSelected, action: hypotensionSelectionAction)
+                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.nephropathy, isSelected: $isNephropathySelected, action: nephropathySelectionAction)
+                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.liver, isSelected: $isLiverSelected, action: liverSelectionAction)
+                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.cancer, isSelected: $isCancerSelected, action: cancerSelectionAction)
+                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.autoImmune, isSelected: $isAutoImmuneSelected, action: autoImmuneSelectionAction)
+                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.metabolic, isSelected: $isMetabolicSelected, action: metabolicSelectionAction)
+                        ComponentMultipleSelectionPrimaryButton(title: AppText.AnyDiseaseView.other, isSelected: $isOtherSelected, action: otherSelectionAction)
                     }
                     Spacer()
-                    ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonDisabled, action: buttonNextTapped)
+                    ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)
                 }
             }
         }

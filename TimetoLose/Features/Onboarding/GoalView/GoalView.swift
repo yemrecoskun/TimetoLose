@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GoalView: View {
-    @State private var isButtonDisabled = false
+    @State private var isButtonNextDisabled = false
     @State private var isFirstChoiceSelected = false
     @State private var isSecondChoiceSelected = false
     @State private var isThirdChoiceSelected = false
@@ -23,13 +23,13 @@ struct GoalView: View {
                 ComponentLabelBody(text: AppText.GoalView.body, font: .bodyRegular, textColor: .brandOrange)
                 // MARK: Choices
                 VStack {
-                    ComponentMultipleSelectionPrimaryButton(title: AppText.GoalView.firstChoice, isSelected: $isFirstChoiceSelected, unselectedImageURL: AppIcon.Name.unselectedCheckMark.rawValue, selectedImageURL: AppIcon.Name.selectedCheckMark.rawValue, action: firstSelectionAction)
-                    ComponentMultipleSelectionPrimaryButton(title: AppText.GoalView.secondChoice, isSelected: $isSecondChoiceSelected, unselectedImageURL: AppIcon.Name.unselectedCheckMark.rawValue, selectedImageURL: AppIcon.Name.selectedCheckMark.rawValue, action: secondSelectionAction)
-                    ComponentMultipleSelectionPrimaryButton(title: AppText.GoalView.thirdChoice, isSelected: $isThirdChoiceSelected, unselectedImageURL: AppIcon.Name.unselectedCheckMark.rawValue, selectedImageURL: AppIcon.Name.selectedCheckMark.rawValue, action: thirdSelectionAction)
-                    ComponentMultipleSelectionPrimaryButton(title: AppText.GoalView.fourthChoice, isSelected: $isFourthChoiceSelected, unselectedImageURL: AppIcon.Name.unselectedCheckMark.rawValue, selectedImageURL: AppIcon.Name.selectedCheckMark.rawValue, action: fourthSelectionAction)
+                    ComponentMultipleSelectionPrimaryButton(title: AppText.GoalView.firstChoice, isSelected: $isFirstChoiceSelected, action: firstSelectionAction)
+                    ComponentMultipleSelectionPrimaryButton(title: AppText.GoalView.secondChoice, isSelected: $isSecondChoiceSelected, action: secondSelectionAction)
+                    ComponentMultipleSelectionPrimaryButton(title: AppText.GoalView.thirdChoice, isSelected: $isThirdChoiceSelected, action: thirdSelectionAction)
+                    ComponentMultipleSelectionPrimaryButton(title: AppText.GoalView.fourthChoice, isSelected: $isFourthChoiceSelected, action: fourthSelectionAction)
                 }
                 Spacer()
-                ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonDisabled, action: buttonNextTapped)
+                ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)
             }
         }
     }
