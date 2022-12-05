@@ -16,6 +16,8 @@
 		7C0056C22935D04000CA6464 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0056C12935D04000CA6464 /* GenderView.swift */; };
 		7C6A9431293E567E004ACDBB /* AnyMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A9430293E567E004ACDBB /* AnyMedicationView.swift */; };
 		7C6A9434293E5B63004ACDBB /* AnyAllergyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A9433293E5B63004ACDBB /* AnyAllergyView.swift */; };
+		7C6A9438293E5E8C004ACDBB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A9437293E5E8C004ACDBB /* NotificationView.swift */; };
+		7C6A943B293E60FD004ACDBB /* ComponentLabelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A943A293E60FD004ACDBB /* ComponentLabelButton.swift */; };
 		7C8571C12936623E001154EF /* ActivityLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571C02936623E001154EF /* ActivityLevelView.swift */; };
 		7C8571C429366286001154EF /* ComponentButtonWithHintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571C329366286001154EF /* ComponentButtonWithHintView.swift */; };
 		7C8571C72936676B001154EF /* SpecificDietView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571C62936676B001154EF /* SpecificDietView.swift */; };
@@ -101,6 +103,8 @@
 		7C0056C12935D04000CA6464 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
 		7C6A9430293E567E004ACDBB /* AnyMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyMedicationView.swift; sourceTree = "<group>"; };
 		7C6A9433293E5B63004ACDBB /* AnyAllergyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyAllergyView.swift; sourceTree = "<group>"; };
+		7C6A9437293E5E8C004ACDBB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		7C6A943A293E60FD004ACDBB /* ComponentLabelButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentLabelButton.swift; sourceTree = "<group>"; };
 		7C8571C02936623E001154EF /* ActivityLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLevelView.swift; sourceTree = "<group>"; };
 		7C8571C329366286001154EF /* ComponentButtonWithHintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentButtonWithHintView.swift; sourceTree = "<group>"; };
 		7C8571C62936676B001154EF /* SpecificDietView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificDietView.swift; sourceTree = "<group>"; };
@@ -260,6 +264,22 @@
 			path = AnyAllergyView;
 			sourceTree = "<group>";
 		};
+		7C6A9435293E5E78004ACDBB /* NotificationView */ = {
+			isa = PBXGroup;
+			children = (
+				7C6A9437293E5E8C004ACDBB /* NotificationView.swift */,
+			);
+			path = NotificationView;
+			sourceTree = "<group>";
+		};
+		7C6A9439293E60E8004ACDBB /* ComponentLabelButton */ = {
+			isa = PBXGroup;
+			children = (
+				7C6A943A293E60FD004ACDBB /* ComponentLabelButton.swift */,
+			);
+			path = ComponentLabelButton;
+			sourceTree = "<group>";
+		};
 		7C8571BF2936622F001154EF /* ActivityLevelView */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +345,7 @@
 				7C8571CB29366C4A001154EF /* AnyDiseaseView */,
 				7C6A942F293E5661004ACDBB /* AnyMedicationView */,
 				7C6A9432293E5B34004ACDBB /* AnyAllergyView */,
+				7C6A9435293E5E78004ACDBB /* NotificationView */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -423,6 +444,7 @@
 				7C8571C229366256001154EF /* ComponentButtonWithHintView */,
 				7C0056BD2935C72E00CA6464 /* ComponentMultipleSelectionPrimaryButton */,
 				7CFF759D29337A03001F0D5F /* ComponentPrimaryButton */,
+				7C6A9439293E60E8004ACDBB /* ComponentLabelButton */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -759,6 +781,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C8571CD29366C62001154EF /* AnyDiseaseView.swift in Sources */,
+				7C6A943B293E60FD004ACDBB /* ComponentLabelButton.swift in Sources */,
 				B6E3E42A293343DF0036ECE2 /* NetworkConstants.swift in Sources */,
 				B6E9C653293A9CA20077A2FB /* WaterView.swift in Sources */,
 				B6E3E437293347490036ECE2 /* DashboardModel.swift in Sources */,
@@ -781,6 +804,7 @@
 				B6E3E44A293393930036ECE2 /* SummaryDayView.swift in Sources */,
 				B6E9C63C293A1C4A0077A2FB /* IndicatorPoint.swift in Sources */,
 				B6E3E459293562E60036ECE2 /* LabelImageView.swift in Sources */,
+				7C6A9438293E5E8C004ACDBB /* NotificationView.swift in Sources */,
 				7CFF75952933745C001F0D5F /* Font+Extension.swift in Sources */,
 				B6E9C644293A1C4A0077A2FB /* PieChartRow.swift in Sources */,
 				B6E3E44229334B690036ECE2 /* AppIcon.swift in Sources */,

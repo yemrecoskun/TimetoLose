@@ -108,6 +108,17 @@ struct AppText {
         static let nuts = "Allergic to nuts"
     }
 
+    struct NotificationView {
+        static let header = "Let notifications help you succeed faster"
+        static let body = "Using notifications increase your chances of success by 73%"
+        static let notificationTitle = "Time to Lose"
+        static let now = "now"
+        static let userName = "Hi, John"
+        static let notificationBody = "Here's the perfect meal list to get you started📝🥗🥦🧀🍫"
+        static let allowNotificaton = "Allow Notifications"
+        static let maybeLater = "Maybe Later"
+    }
+
     static func getText(_ text: Text) -> String {
         return text.rawValue
     }
