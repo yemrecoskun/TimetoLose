@@ -27,9 +27,10 @@ struct ProfileView: View {
                 Spacer()
                 ComponentLabelHeader(text: "Progress\n1 kg\nkgs lost",
                                      textColor: .brandOrange)
+                Spacer()
             }
             ComponentLabelHeader(text: "Ahmet Yasin",
-                                 textColor: .brandOrange)
+                                 textColor: .brandOrange).padding(.trailing)
             ScrollView(showsIndicators: false) {
                 buttonView(textValue: "Logout")
                 buttonView(textValue: "Settings")

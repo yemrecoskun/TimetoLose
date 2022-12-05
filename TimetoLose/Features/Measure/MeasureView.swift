@@ -8,51 +8,56 @@
 import SwiftUI
 
 struct MeasureView: View {
-    @State public var selectedIndex: Int = 0
-    
-    public var items = [
-        BottomBarItem(icon: "house.fill", title: "Home", color: .lightAppColor),
-        BottomBarItem(icon: "lines.measurement.horizontal", title: "Measure", color: .lightAppColor)
-    ]
-    
-    public var selectedItem: BottomBarItem {
-        items[selectedIndex]
-    }
-    
-    func itemView(at index: Int) -> some View {
-        Button(action: {
-            withAnimation { self.selectedIndex = index }
-        }) {
-            BottomBarItemView(selected: self.$selectedIndex,
-                              index: index,
-                              item: items[index])
+    var body: some View {
+        VStack {
+            ScrollView {
+                VStack {
+                    keyValueText(key: "Boy", value: "185")
+                    keyValueText(key: "Kilo", value: "82")
+                    keyValueText(key: "BMI", value: "%20")
+                    keyValueText(key: "Yağ Kütlesi", value: "%10")
+                    keyValueText(key: "Kas Kütlesi", value: "%5")
+                }.padding().background(Color.brandOrange).cornerRadius(20).padding(.horizontal,10)
+                VStack {
+                    Spacer()
+                    HStack {
+                        VStack {
+                            ComponentLabelBody(text: "19.07.2022 tarihinde girilmiş ölçüler", textColor: .white)
+                            keyView("0.0")
+                            keyView("0.0")
+                            keyView("0.0")
+                            keyView("0.0")
+                            keyView("0.0")
+                            keyView("0.0")
+                            keyView("0.0")
+                            keyView("0.0")
+                        }
+                        AppIcon.getIcon(.body)
+                        VStack {
+                            ComponentLabelBody(text: "Vücut ölçülerinizi cm cinsinden giriniz", textColor: .white)
+                            keyView("Boy")
+                            keyView("Omuz")
+                            keyView("Göğüs")
+                            keyView("Kol")
+                            keyView("Bel")
+                            keyView("Basen")
+                            keyView("Bacak")
+                            keyView("Kilo")
+                        }
+                    }
+                }.padding(8).background(Color.brandOrange).cornerRadius(20).padding(.horizontal,10)
+            }.padding(.vertical,10)
         }
     }
-    init() {
-        UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(Color.brandOrange)
-        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
-        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(Color.grayText)], for: .normal)
-        UISegmentedControl.appearance().backgroundColor = .white
+    func keyView(_ value: String) -> some View {
+        ComponentLabelBody(text: value, textColor: .white).padding(5).frame(width:100).background(Color.grayText).cornerRadius(10)
     }
-    
-    var body: some View {
-        ScrollView {
-            VStack {
-                Picker("", selection: $selectedIndex) {
-                    Text("Ölçüm").tag(0)
-                    Text("Aktivite").tag(1)
-                }.padding(.horizontal)
-                    .pickerStyle(SegmentedPickerStyle())
-               Spacer()
-                    switch(selectedIndex) {
-                        case 0: BodyMeasureView()
-                        case 1: ActivityView()
-                        default:
-                            DashboardView()
-                    }
-                Spacer()
-            }
-         }
+    func keyValueText(key: String, value: String) -> some View {
+        HStack {
+            ComponentLabelBody(text: key, textColor: .white)
+            Spacer()
+            ComponentLabelBody(text: value, textColor: .white)
+        }
     }
 }
 

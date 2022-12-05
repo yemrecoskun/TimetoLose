@@ -21,11 +21,9 @@ struct ProfileBar: View {
                 Text("Ahmet Yasin").bold()
             }
             Spacer()
-            AppIcon.getIcon(.notification)?.padding(6).background(Color.brandOrange).shadow(color: .white, radius: 1)
+            AppIcon.getIcon(.notification)?.padding(8).background(Color.brandOrange).border(.white,width: 0.4)
             Spacer()
-            AppIcon.getIcon(.profile)?.padding(6).background(Color.brandOrange).shadow(color: .white, radius: 1)
-            Spacer()
-        }.padding()
+        }.padding(8)
             .background(Color.brandOrange)
             .foregroundColor(Color.white)
             .cornerRadius(22)

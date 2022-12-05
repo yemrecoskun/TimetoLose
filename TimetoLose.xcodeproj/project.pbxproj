@@ -85,7 +85,6 @@
 		B6E9C650293A855E0077A2FB /* LabelButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C64F293A855E0077A2FB /* LabelButtonView.swift */; };
 		B6E9C653293A9CA20077A2FB /* WaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C652293A9CA20077A2FB /* WaterView.swift */; };
 		B6E9C656293AB04E0077A2FB /* MeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C655293AB04E0077A2FB /* MeasureView.swift */; };
-		B6E9C659293B503A0077A2FB /* BodyMeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C658293B503A0077A2FB /* BodyMeasureView.swift */; };
 		B6E9C65C293B50500077A2FB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C65B293B50500077A2FB /* ActivityView.swift */; };
 /* End PBXBuildFile section */
 
@@ -170,7 +169,6 @@
 		B6E9C64F293A855E0077A2FB /* LabelButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelButtonView.swift; sourceTree = "<group>"; };
 		B6E9C652293A9CA20077A2FB /* WaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterView.swift; sourceTree = "<group>"; };
 		B6E9C655293AB04E0077A2FB /* MeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureView.swift; sourceTree = "<group>"; };
-		B6E9C658293B503A0077A2FB /* BodyMeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMeasureView.swift; sourceTree = "<group>"; };
 		B6E9C65B293B50500077A2FB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -441,6 +439,14 @@
 			path = ComponentSpacer;
 			sourceTree = "<group>";
 		};
+		B641EF08293E31FF00D0BD30 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				B6E9C65B293B50500077A2FB /* ActivityView.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
 		B697B119293B7A2600E7209B /* ProfileView */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +470,7 @@
 		B6E3E431293346110036ECE2 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				B641EF08293E31FF00D0BD30 /* Activity */,
 				B6E9C654293AAFA30077A2FB /* Measure */,
 				B6E3E44B2933FD4D0036ECE2 /* BottomMenu */,
 				7CFF756929337115001F0D5F /* Onboarding */,
@@ -642,27 +649,9 @@
 		B6E9C654293AAFA30077A2FB /* Measure */ = {
 			isa = PBXGroup;
 			children = (
-				B6E9C65A293B503E0077A2FB /* ActivityView */,
-				B6E9C657293B502D0077A2FB /* BodyMeasureView */,
 				B6E9C655293AB04E0077A2FB /* MeasureView.swift */,
 			);
 			path = Measure;
-			sourceTree = "<group>";
-		};
-		B6E9C657293B502D0077A2FB /* BodyMeasureView */ = {
-			isa = PBXGroup;
-			children = (
-				B6E9C658293B503A0077A2FB /* BodyMeasureView.swift */,
-			);
-			path = BodyMeasureView;
-			sourceTree = "<group>";
-		};
-		B6E9C65A293B503E0077A2FB /* ActivityView */ = {
-			isa = PBXGroup;
-			children = (
-				B6E9C65B293B50500077A2FB /* ActivityView.swift */,
-			);
-			path = ActivityView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -791,7 +780,6 @@
 				44FAEB3328E7346D00A955EA /* Persistence.swift in Sources */,
 				B6E3E428293343D30036ECE2 /* NetworkConnection.swift in Sources */,
 				B6E9C6162937FAC60077A2FB /* TabView.swift in Sources */,
-				B6E9C659293B503A0077A2FB /* BodyMeasureView.swift in Sources */,
 				B6E9C656293AB04E0077A2FB /* MeasureView.swift in Sources */,
 				B6E9C648293A1C4A0077A2FB /* BarChartView.swift in Sources */,
 				B6E9C64B293A1C4A0077A2FB /* BarChartCell.swift in Sources */,

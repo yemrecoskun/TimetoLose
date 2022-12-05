@@ -12,7 +12,7 @@ struct TabViews: View {
     public var items = [
         TabBarItem(icon: "house.fill", title: "Home", color: .lightAppColor),
         TabBarItem(icon: "lines.measurement.horizontal", title: "Measure", color: .lightAppColor),
-        TabBarItem(icon: "figure.socialdance", title: "Social", color: .lightAppColor),
+        TabBarItem(icon: "figure.socialdance", title: "Activity", color: .lightAppColor),
         TabBarItem(icon: "person.fill", title: "Profile", color: .lightAppColor)
     ]
      func menuView(at: Int) -> AnyView {
@@ -22,7 +22,7 @@ struct TabViews: View {
         case 1:
             return AnyView(MeasureView())
         case 2:
-            return AnyView(DashboardView())
+            return AnyView(ActivityView())
         case 3:
             return AnyView(ProfileView())
         default:
@@ -37,7 +37,7 @@ struct TabViews: View {
         
         VStack {
             Spacer()
-            ProfileBar().padding(.horizontal,16).padding(.vertical,30)
+            ProfileBar().padding(.horizontal,8).padding(.vertical,30)
             TabView {
                 ForEach(0..<items.count) { index in
                     menuView(at: index).background(Color.background)

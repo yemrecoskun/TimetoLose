@@ -84,7 +84,7 @@ public struct BottomBar : View {
     public var items = [
         BottomBarItem(icon: "house.fill", title: "Home", color: .lightAppColor),
         BottomBarItem(icon: "lines.measurement.horizontal", title: "Measure", color: .lightAppColor),
-        BottomBarItem(icon: "figure.socialdance", title: "Social", color: .lightAppColor),
+        BottomBarItem(icon: "figure.socialdance", title: "Activity", color: .lightAppColor),
         BottomBarItem(icon: "person.fill", title: "Profile", color: .lightAppColor)
     ]
     public var selectedItem: BottomBarItem {
@@ -107,7 +107,7 @@ public struct BottomBar : View {
             switch(selectedIndex) {
                 case 0: DashboardView()
                 case 1: MeasureView()
-                case 2: DashboardView()
+                case 2: ActivityView()
                 case 3: ProfileView()
             default:
                 DashboardView()
