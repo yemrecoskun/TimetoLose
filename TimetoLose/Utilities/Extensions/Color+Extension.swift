@@ -19,6 +19,7 @@ extension Color {
     static let background = Color("background")
     static let brandOrange = Color("brandOrange")
     static let grayText = Color(hex: "ADA4A5")
+    static let brandOrangeOpaque = Color("brandOrangeOpaque")
 }
 
 extension Color {

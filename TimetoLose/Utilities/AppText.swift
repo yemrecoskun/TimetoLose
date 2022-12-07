@@ -39,6 +39,12 @@ struct AppText {
         static let placeholder = "Enter your age"
     }
 
+    struct HeightView {
+        static let header = "How tall are you?"
+        static let body = "Your height is also crucial for calculating your ideal calorie intake and macros."
+        static let placeholder = "Enter your height"
+    }
+
     struct ActivityLevelView {
         static let header = "How active are you?"
         static let body = "Knowing your daily activity level helps us calculate your calorie need more accurately."
