@@ -51,6 +51,13 @@ struct AppText {
         static let placeholder = "Enter your weight"
     }
 
+    struct TargetWeightView {
+        static let header = "What's your target weight?"
+        static let body = "We recommended starting with an achievable goal and slowly adjust as you reach it."
+        static let placeholder = "Enter your target weight"
+        static let recommendedWeightRange = "Recommended weight range:"
+    }
+
     struct ActivityLevelView {
         static let header = "How active are you?"
         static let body = "Knowing your daily activity level helps us calculate your calorie need more accurately."

@@ -26,6 +26,7 @@
 		7C8571CD29366C62001154EF /* AnyDiseaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571CC29366C62001154EF /* AnyDiseaseView.swift */; };
 		7CA6E9A4294113E900414672 /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6E9A3294113E900414672 /* HeightView.swift */; };
 		7CA6E9A7294117E300414672 /* CurrentWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6E9A6294117E300414672 /* CurrentWeightView.swift */; };
+		7CA6E9AA294118B200414672 /* TargetWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6E9A9294118B200414672 /* TargetWeightView.swift */; };
 		7CFF756E2933715D001F0D5F /* BaseLabelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF756D2933715D001F0D5F /* BaseLabelProtocol.swift */; };
 		7CFF7578293371A3001F0D5F /* ComponentLabelBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF7575293371A3001F0D5F /* ComponentLabelBody.swift */; };
 		7CFF7579293371A3001F0D5F /* ComponentLabelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF7577293371A3001F0D5F /* ComponentLabelHeader.swift */; };
@@ -116,6 +117,7 @@
 		7C8571CC29366C62001154EF /* AnyDiseaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDiseaseView.swift; sourceTree = "<group>"; };
 		7CA6E9A3294113E900414672 /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
 		7CA6E9A6294117E300414672 /* CurrentWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeightView.swift; sourceTree = "<group>"; };
+		7CA6E9A9294118B200414672 /* TargetWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetWeightView.swift; sourceTree = "<group>"; };
 		7CFF756D2933715D001F0D5F /* BaseLabelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLabelProtocol.swift; sourceTree = "<group>"; };
 		7CFF7575293371A3001F0D5F /* ComponentLabelBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentLabelBody.swift; sourceTree = "<group>"; };
 		7CFF7577293371A3001F0D5F /* ComponentLabelHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentLabelHeader.swift; sourceTree = "<group>"; };
@@ -350,6 +352,14 @@
 			path = CurrentWeightView;
 			sourceTree = "<group>";
 		};
+		7CA6E9A8294118A400414672 /* TargetWeightView */ = {
+			isa = PBXGroup;
+			children = (
+				7CA6E9A9294118B200414672 /* TargetWeightView.swift */,
+			);
+			path = TargetWeightView;
+			sourceTree = "<group>";
+		};
 		7CFF75682933707E001F0D5F /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +382,7 @@
 				7C3AA98529410B5C00C54684 /* AgeView */,
 				7CA6E9A2294113DC00414672 /* HeightView */,
 				7CA6E9A5294117D600414672 /* CurrentWeightView */,
+				7CA6E9A8294118A400414672 /* TargetWeightView */,
 				7C8571BF2936622F001154EF /* ActivityLevelView */,
 				7C8571C529366757001154EF /* SpecificDietView */,
 				7C8571C829366A0C001154EF /* AnySnackView */,
@@ -847,6 +858,7 @@
 				B6E9C65C293B50500077A2FB /* ActivityView.swift in Sources */,
 				B6E3E44D2933FD5C0036ECE2 /* BottomMenuView.swift in Sources */,
 				B6E3E4392933475A0036ECE2 /* ProfileBar.swift in Sources */,
+				7CA6E9AA294118B200414672 /* TargetWeightView.swift in Sources */,
 				B6E9C647293A1C4A0077A2FB /* PieChartView.swift in Sources */,
 				B6E3E447293384400036ECE2 /* ProcessCircleView.swift in Sources */,
 				7CFF75992933779E001F0D5F /* Color+Extension.swift in Sources */,
