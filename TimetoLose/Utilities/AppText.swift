@@ -33,6 +33,12 @@ struct AppText {
         static let male = "Male"
     }
 
+    struct AgeView {
+        static let header = "How old are you?"
+        static let body = "We need your age to accurately calculate your daily calorie goal."
+        static let placeholder = "Enter your age"
+    }
+
     struct ActivityLevelView {
         static let header = "How active are you?"
         static let body = "Knowing your daily activity level helps us calculate your calorie need more accurately."

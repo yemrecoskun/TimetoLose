@@ -14,6 +14,7 @@
 		44FAEB3628E7346D00A955EA /* TimetoLose.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44FAEB3428E7346D00A955EA /* TimetoLose.xcdatamodeld */; };
 		7C0056BF2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0056BE2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift */; };
 		7C0056C22935D04000CA6464 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0056C12935D04000CA6464 /* GenderView.swift */; };
+		7C3AA98729410B7200C54684 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3AA98629410B7200C54684 /* AgeView.swift */; };
 		7C6A9431293E567E004ACDBB /* AnyMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A9430293E567E004ACDBB /* AnyMedicationView.swift */; };
 		7C6A9434293E5B63004ACDBB /* AnyAllergyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A9433293E5B63004ACDBB /* AnyAllergyView.swift */; };
 		7C6A9438293E5E8C004ACDBB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A9437293E5E8C004ACDBB /* NotificationView.swift */; };
@@ -101,6 +102,7 @@
 		44FAEB3528E7346D00A955EA /* TimetoLose.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimetoLose.xcdatamodel; sourceTree = "<group>"; };
 		7C0056BE2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentMultipleSelectionPrimaryButton.swift; sourceTree = "<group>"; };
 		7C0056C12935D04000CA6464 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		7C3AA98629410B7200C54684 /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; };
 		7C6A9430293E567E004ACDBB /* AnyMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyMedicationView.swift; sourceTree = "<group>"; };
 		7C6A9433293E5B63004ACDBB /* AnyAllergyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyAllergyView.swift; sourceTree = "<group>"; };
 		7C6A9437293E5E8C004ACDBB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -248,6 +250,14 @@
 			path = GenderView;
 			sourceTree = "<group>";
 		};
+		7C3AA98529410B5C00C54684 /* AgeView */ = {
+			isa = PBXGroup;
+			children = (
+				7C3AA98629410B7200C54684 /* AgeView.swift */,
+			);
+			path = AgeView;
+			sourceTree = "<group>";
+		};
 		7C6A942F293E5661004ACDBB /* AnyMedicationView */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +349,7 @@
 			children = (
 				7CFF756A2933712A001F0D5F /* GoalView */,
 				7C0056C02935D02D00CA6464 /* GenderView */,
+				7C3AA98529410B5C00C54684 /* AgeView */,
 				7C8571BF2936622F001154EF /* ActivityLevelView */,
 				7C8571C529366757001154EF /* SpecificDietView */,
 				7C8571C829366A0C001154EF /* AnySnackView */,
@@ -786,6 +797,7 @@
 				B6E9C653293A9CA20077A2FB /* WaterView.swift in Sources */,
 				B6E3E437293347490036ECE2 /* DashboardModel.swift in Sources */,
 				7C8571CA29366A19001154EF /* AnySnackView.swift in Sources */,
+				7C3AA98729410B7200C54684 /* AgeView.swift in Sources */,
 				B6E9C649293A1C4A0077A2FB /* BarChartRow.swift in Sources */,
 				B6E9C650293A855E0077A2FB /* LabelButtonView.swift in Sources */,
 				B6E3E46C293688170036ECE2 /* RoundedCorners.swift in Sources */,
