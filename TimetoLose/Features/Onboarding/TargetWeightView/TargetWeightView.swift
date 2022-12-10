@@ -10,9 +10,7 @@ import SwiftUI
 struct TargetWeightView: View {
     @State private var isButtonNextDisabled = false
     @AppStorage(AppStorageKeys.targetWeight) private var targetWeight = ""
-    @AppStorage(AppStorageKeys.measureTypeWeight) private var measureTypeWeight = ""
     @State private var isMoveToNextScreen = false
-    private let measureTypeList = ["kg", "lb"]
     private let placeholderOpacity = 0.5
     private let buttonWidth = UIScreen.screenWidth * 0.8
     private let textFieldLine = UIScreen.screenWidth * 0.6
@@ -44,13 +42,6 @@ struct TargetWeightView: View {
                     Divider()
                         .frame(width: textFieldLine, height: .smallPoint)
                         .overlay(Color.brandOrange)
-                    Picker("", selection: $measureTypeWeight) {
-                        ForEach(measureTypeList, id: \.self) {
-                            Text($0)
-                        }
-                    }
-                    .pickerStyle(.segmented)
-                    .frame(width: segmentedPickerWidth)
                     ComponentLabelHeader(text: AppText.TargetWeightView.recommendedWeightRange, font: .bodyExtraLarge, textColor: .brandOrange)
                     // TODO: recommended weight range icin hesaplama yap
                 }
