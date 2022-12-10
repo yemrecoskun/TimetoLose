@@ -14,6 +14,7 @@ struct HeightView: View {
     @State private var isMoveToNextScreen = false
     private let measureTypeList = ["cm", "ft"]
     private let placeholderOpacity = 0.5
+    private let nextButtonCornerRadius: CGFloat = 100
     private let buttonWidth = UIScreen.screenWidth * 0.8
     private let textFieldLine = UIScreen.screenWidth * 0.6
     private let segmentedPickerWidth = UIScreen.screenWidth * 0.3
@@ -26,7 +27,7 @@ struct HeightView: View {
     var body: some View {
         ZStack {
             Color.background.ignoresSafeArea()
-            VStack {
+            VStack(spacing: .extraLargeMediumPoint) {
                 ComponentLabelHeader(text: AppText.HeightView.header, font: .bodyExtraLarge, textColor: .brandOrange)
                 ComponentLabelBody(text: AppText.HeightView.body, font: .bodyRegular, textColor: .brandOrange)
                 VStack {
@@ -44,6 +45,7 @@ struct HeightView: View {
                     Divider()
                         .frame(width: textFieldLine, height: .smallPoint)
                         .overlay(Color.brandOrange)
+                    ComponentSpacer(direction: .vertical, size: .doubleRegularPoint)
                     Picker("", selection: $measureTypeHeight) {
                         ForEach(measureTypeList, id: \.self) {
                             Text($0)
@@ -53,7 +55,7 @@ struct HeightView: View {
                     .frame(width: segmentedPickerWidth)
                 }
                 Spacer()
-                ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)
+                ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, cornerRadius: nextButtonCornerRadius, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)
             }
         }
         .go(to: CurrentWeightView(), when: $isMoveToNextScreen)

@@ -12,6 +12,7 @@ struct TargetWeightView: View {
     @AppStorage(AppStorageKeys.targetWeight) private var targetWeight = ""
     @State private var isMoveToNextScreen = false
     private let placeholderOpacity = 0.5
+    private let nextButtonCornerRadius: CGFloat = 100
     private let buttonWidth = UIScreen.screenWidth * 0.8
     private let textFieldLine = UIScreen.screenWidth * 0.6
     private let segmentedPickerWidth = UIScreen.screenWidth * 0.3
@@ -24,7 +25,7 @@ struct TargetWeightView: View {
     var body: some View {
         ZStack {
             Color.background.ignoresSafeArea()
-            VStack {
+            VStack(spacing: .extraLargeMediumPoint) {
                 ComponentLabelHeader(text: AppText.TargetWeightView.header, font: .bodyExtraLarge, textColor: .brandOrange)
                 ComponentLabelBody(text: AppText.TargetWeightView.body, font: .bodyRegular, textColor: .brandOrange)
                 VStack {
@@ -42,11 +43,12 @@ struct TargetWeightView: View {
                     Divider()
                         .frame(width: textFieldLine, height: .smallPoint)
                         .overlay(Color.brandOrange)
-                    ComponentLabelHeader(text: AppText.TargetWeightView.recommendedWeightRange, font: .bodyExtraLarge, textColor: .brandOrange)
+                    ComponentSpacer(direction: .vertical, size: .doubleRegularPoint)
+                    ComponentLabelHeader(text: AppText.TargetWeightView.recommendedWeightRange, font: .bodyRegularMedium, textColor: .brandOrange)
                     // TODO: recommended weight range icin hesaplama yap
                 }
                 Spacer()
-                ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)
+                ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, cornerRadius: nextButtonCornerRadius, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)
             }
         }
         .go(to: TabViews(), when: $isMoveToNextScreen)

@@ -12,13 +12,14 @@ struct AgeView: View {
     @AppStorage(AppStorageKeys.age) private var age = ""
     @State private var isMoveToNextScreen = false
     private let placeholderOpacity = 0.5
+    private let nextButtonCornerRadius: CGFloat = 100
     private let buttonWidth = UIScreen.screenWidth * 0.8
     private let textFieldLine = UIScreen.screenWidth * 0.6
 
     var body: some View {
         ZStack {
             Color.background.ignoresSafeArea()
-            VStack {
+            VStack(spacing: .extraLargeMediumPoint) {
                 ComponentLabelHeader(text: AppText.AgeView.header, font: .bodyExtraLarge, textColor: .brandOrange)
                 ComponentLabelBody(text: AppText.AgeView.body, font: .bodyRegular, textColor: .brandOrange)
                 VStack {
@@ -38,7 +39,7 @@ struct AgeView: View {
                         .overlay(Color.brandOrange)
                 }
                 Spacer()
-                ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)
+                ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, cornerRadius: nextButtonCornerRadius, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)
             }
         }
         .go(to: HeightView(), when: $isMoveToNextScreen)
