@@ -15,6 +15,9 @@
 		7C0056BF2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0056BE2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift */; };
 		7C0056C22935D04000CA6464 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0056C12935D04000CA6464 /* GenderView.swift */; };
 		7C3AA98729410B7200C54684 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3AA98629410B7200C54684 /* AgeView.swift */; };
+		7C5F787E2944A35300317D8A /* AppStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F787D2944A35300317D8A /* AppStorageKeys.swift */; };
+		7C5F78802944A4D400317D8A /* InputSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F787F2944A4D400317D8A /* InputSelections.swift */; };
+		7C5F78822944A6E000317D8A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F78812944A6E000317D8A /* View+Extension.swift */; };
 		7C6A9431293E567E004ACDBB /* AnyMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A9430293E567E004ACDBB /* AnyMedicationView.swift */; };
 		7C6A9434293E5B63004ACDBB /* AnyAllergyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A9433293E5B63004ACDBB /* AnyAllergyView.swift */; };
 		7C6A9438293E5E8C004ACDBB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A9437293E5E8C004ACDBB /* NotificationView.swift */; };
@@ -106,6 +109,9 @@
 		7C0056BE2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentMultipleSelectionPrimaryButton.swift; sourceTree = "<group>"; };
 		7C0056C12935D04000CA6464 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
 		7C3AA98629410B7200C54684 /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; };
+		7C5F787D2944A35300317D8A /* AppStorageKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageKeys.swift; sourceTree = "<group>"; };
+		7C5F787F2944A4D400317D8A /* InputSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSelections.swift; sourceTree = "<group>"; };
+		7C5F78812944A6E000317D8A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		7C6A9430293E567E004ACDBB /* AnyMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyMedicationView.swift; sourceTree = "<group>"; };
 		7C6A9433293E5B63004ACDBB /* AnyAllergyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyAllergyView.swift; sourceTree = "<group>"; };
 		7C6A9437293E5E8C004ACDBB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -478,6 +484,7 @@
 				7CFF75982933779E001F0D5F /* Color+Extension.swift */,
 				7CFF75A029337A2A001F0D5F /* CGFloat+Extension.swift */,
 				7CFF75A229337B9D001F0D5F /* UIScreen+Extension.swift */,
+				7C5F78812944A6E000317D8A /* View+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -599,6 +606,8 @@
 			children = (
 				B6E3E43F29334B590036ECE2 /* AppText.swift */,
 				B6E3E44129334B690036ECE2 /* AppIcon.swift */,
+				7C5F787D2944A35300317D8A /* AppStorageKeys.swift */,
+				7C5F787F2944A4D400317D8A /* InputSelections.swift */,
 				7CFF759329337449001F0D5F /* Extensions */,
 			);
 			path = Utilities;
@@ -831,6 +840,7 @@
 				B6E3E437293347490036ECE2 /* DashboardModel.swift in Sources */,
 				7C8571CA29366A19001154EF /* AnySnackView.swift in Sources */,
 				7C3AA98729410B7200C54684 /* AgeView.swift in Sources */,
+				7C5F78802944A4D400317D8A /* InputSelections.swift in Sources */,
 				B6E9C649293A1C4A0077A2FB /* BarChartRow.swift in Sources */,
 				B6E9C650293A855E0077A2FB /* LabelButtonView.swift in Sources */,
 				B6E3E46C293688170036ECE2 /* RoundedCorners.swift in Sources */,
@@ -845,6 +855,7 @@
 				B6E9C641293A1C4A0077A2FB /* Path+QuadCurve.swift in Sources */,
 				B6E3E43B293347660036ECE2 /* ProfileBarModel.swift in Sources */,
 				7CFF75A729337D31001F0D5F /* ComponentDivider.swift in Sources */,
+				7C5F78822944A6E000317D8A /* View+Extension.swift in Sources */,
 				B6E3E43D293347750036ECE2 /* ProfileBarService.swift in Sources */,
 				B6E3E44A293393930036ECE2 /* SummaryDayView.swift in Sources */,
 				B6E9C63C293A1C4A0077A2FB /* IndicatorPoint.swift in Sources */,
@@ -867,6 +878,7 @@
 				B6E3E45329354A9D0036ECE2 /* WeeklyStreakView.swift in Sources */,
 				B6E9C625293A1BBF0077A2FB /* WeeklyStatusView.swift in Sources */,
 				7C0056BF2935C74800CA6464 /* ComponentMultipleSelectionPrimaryButton.swift in Sources */,
+				7C5F787E2944A35300317D8A /* AppStorageKeys.swift in Sources */,
 				B6E9C63E293A1C4A0077A2FB /* Legend.swift in Sources */,
 				B6E9C640293A1C4A0077A2FB /* MagnifierRect.swift in Sources */,
 				44FAEB3328E7346D00A955EA /* Persistence.swift in Sources */,

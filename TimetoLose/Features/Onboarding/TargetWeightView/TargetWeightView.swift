@@ -9,8 +9,9 @@ import SwiftUI
 
 struct TargetWeightView: View {
     @State private var isButtonNextDisabled = false
-    @State private var weight = ""
-    @State private var measureType = "kg"
+    @AppStorage(AppStorageKeys.targetWeight) private var targetWeight = ""
+    @AppStorage(AppStorageKeys.measureTypeWeight) private var measureTypeWeight = ""
+    @State private var isMoveToNextScreen = false
     private let measureTypeList = ["kg", "lb"]
     private let placeholderOpacity = 0.5
     private let buttonWidth = UIScreen.screenWidth * 0.8
@@ -29,12 +30,12 @@ struct TargetWeightView: View {
                 ComponentLabelHeader(text: AppText.TargetWeightView.header, font: .bodyExtraLarge, textColor: .brandOrange)
                 ComponentLabelBody(text: AppText.TargetWeightView.body, font: .bodyRegular, textColor: .brandOrange)
                 VStack {
-                    TextField("", text: $weight)
+                    TextField("", text: $targetWeight)
                         .foregroundColor(.brandOrange)
                         .font(.bodyLarge)
                         .keyboardType(.numberPad)
                         .multilineTextAlignment(.center)
-                        .placeholder(when: weight.isEmpty) {
+                        .placeholder(when: targetWeight.isEmpty) {
                             Text(AppText.TargetWeightView.placeholder)
                                 .foregroundColor(.brandOrange)
                                 .font(.bodyLarge)
@@ -43,7 +44,7 @@ struct TargetWeightView: View {
                     Divider()
                         .frame(width: textFieldLine, height: .smallPoint)
                         .overlay(Color.brandOrange)
-                    Picker("", selection: $measureType) {
+                    Picker("", selection: $measureTypeWeight) {
                         ForEach(measureTypeList, id: \.self) {
                             Text($0)
                         }
@@ -51,13 +52,16 @@ struct TargetWeightView: View {
                     .pickerStyle(.segmented)
                     .frame(width: segmentedPickerWidth)
                     ComponentLabelHeader(text: AppText.TargetWeightView.recommendedWeightRange, font: .bodyExtraLarge, textColor: .brandOrange)
+                    // TODO: recommended weight range icin hesaplama yap
                 }
                 Spacer()
                 ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)
             }
         }
+        .go(to: TabViews(), when: $isMoveToNextScreen)
     }
     private func buttonNextTapped() {
+        isMoveToNextScreen = true
     }
 }
 

@@ -9,8 +9,9 @@ import SwiftUI
 
 struct CurrentWeightView: View {
     @State private var isButtonNextDisabled = false
-    @State private var weight = ""
-    @State private var measureType = "kg"
+    @AppStorage(AppStorageKeys.currentWeight) private var currentWeight = ""
+    @AppStorage(AppStorageKeys.measureTypeWeight) private var measureTypeWeight = "kg"
+    @State private var isMoveToNextScreen = false
     private let measureTypeList = ["kg", "lb"]
     private let placeholderOpacity = 0.5
     private let buttonWidth = UIScreen.screenWidth * 0.8
@@ -29,12 +30,12 @@ struct CurrentWeightView: View {
                 ComponentLabelHeader(text: AppText.CurrentWeightView.header, font: .bodyExtraLarge, textColor: .brandOrange)
                 ComponentLabelBody(text: AppText.CurrentWeightView.body, font: .bodyRegular, textColor: .brandOrange)
                 VStack {
-                    TextField("", text: $weight)
+                    TextField("", text: $currentWeight)
                         .foregroundColor(.brandOrange)
                         .font(.bodyLarge)
                         .keyboardType(.numberPad)
                         .multilineTextAlignment(.center)
-                        .placeholder(when: weight.isEmpty) {
+                        .placeholder(when: currentWeight.isEmpty) {
                             Text(AppText.CurrentWeightView.placeholder)
                                 .foregroundColor(.brandOrange)
                                 .font(.bodyLarge)
@@ -43,7 +44,7 @@ struct CurrentWeightView: View {
                     Divider()
                         .frame(width: textFieldLine, height: .smallPoint)
                         .overlay(Color.brandOrange)
-                    Picker("", selection: $measureType) {
+                    Picker("", selection: $measureTypeWeight) {
                         ForEach(measureTypeList, id: \.self) {
                             Text($0)
                         }
@@ -55,8 +56,10 @@ struct CurrentWeightView: View {
                 ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)
             }
         }
+        .go(to: TargetWeightView(), when: $isMoveToNextScreen)
     }
     private func buttonNextTapped() {
+        isMoveToNextScreen = true
     }
 }
 

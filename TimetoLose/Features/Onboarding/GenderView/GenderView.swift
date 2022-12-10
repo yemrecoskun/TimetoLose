@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GenderView: View {
     private let buttonWidth = UIScreen.screenWidth * 0.6
+    @AppStorage(AppStorageKeys.gender) private var gender = ""
+    @State private var isMoveToNextScreen = false
     @State private var isDisabled = false
     
     var body: some View {
@@ -25,11 +27,16 @@ struct GenderView: View {
                 Spacer()
             }
         }
+        .go(to: AgeView(), when: $isMoveToNextScreen)
     }
     private func femaleButtonTapped() {
+        gender = InputSelections.Gender.female
+        isMoveToNextScreen = true
     }
 
     private func maleButtonTapped() {
+        gender = InputSelections.Gender.male
+        isMoveToNextScreen = true
     }
 }
 

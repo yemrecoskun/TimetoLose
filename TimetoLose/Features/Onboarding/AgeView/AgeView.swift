@@ -9,7 +9,8 @@ import SwiftUI
 
 struct AgeView: View {
     @State private var isButtonNextDisabled = false
-    @State private var age = ""
+    @AppStorage(AppStorageKeys.age) private var age = ""
+    @State private var isMoveToNextScreen = false
     private let placeholderOpacity = 0.5
     private let buttonWidth = UIScreen.screenWidth * 0.8
     private let textFieldLine = UIScreen.screenWidth * 0.6
@@ -40,8 +41,10 @@ struct AgeView: View {
                 ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)
             }
         }
+        .go(to: HeightView(), when: $isMoveToNextScreen)
     }
     private func buttonNextTapped() {
+        isMoveToNextScreen = true
     }
 }
 

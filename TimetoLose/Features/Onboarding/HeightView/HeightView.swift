@@ -9,8 +9,9 @@ import SwiftUI
 
 struct HeightView: View {
     @State private var isButtonNextDisabled = false
-    @State private var height = ""
-    @State private var measureType = "cm"
+    @AppStorage(AppStorageKeys.height) private var height = ""
+    @AppStorage(AppStorageKeys.measureTypeHeight) private var measureTypeHeight = "cm"
+    @State private var isMoveToNextScreen = false
     private let measureTypeList = ["cm", "ft"]
     private let placeholderOpacity = 0.5
     private let buttonWidth = UIScreen.screenWidth * 0.8
@@ -43,7 +44,7 @@ struct HeightView: View {
                     Divider()
                         .frame(width: textFieldLine, height: .smallPoint)
                         .overlay(Color.brandOrange)
-                    Picker("", selection: $measureType) {
+                    Picker("", selection: $measureTypeHeight) {
                         ForEach(measureTypeList, id: \.self) {
                             Text($0)
                         }
@@ -55,8 +56,10 @@ struct HeightView: View {
                 ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)
             }
         }
+        .go(to: CurrentWeightView(), when: $isMoveToNextScreen)
     }
     private func buttonNextTapped() {
+        isMoveToNextScreen = true
     }
 }
 

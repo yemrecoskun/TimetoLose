@@ -13,6 +13,7 @@ struct GoalView: View {
     @State private var isSecondChoiceSelected = false
     @State private var isThirdChoiceSelected = false
     @State private var isFourthChoiceSelected = false
+    @State private var isMoveToNextScreen = false
     private let buttonWidth = UIScreen.screenWidth * 0.8
 
     var body: some View {
@@ -32,6 +33,7 @@ struct GoalView: View {
                 ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)
             }
         }
+        .go(to: GenderView(), when: $isMoveToNextScreen)
     }
 
     private func firstSelectionAction() {
@@ -51,6 +53,7 @@ struct GoalView: View {
     }
 
     private func buttonNextTapped() {
+        isMoveToNextScreen = true
     }
 }
 
