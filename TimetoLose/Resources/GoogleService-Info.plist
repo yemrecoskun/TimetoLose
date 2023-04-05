@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>989952315276-a9j70pu1s761n4ge8d2ssn2k2tmv2jas.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.989952315276-a9j70pu1s761n4ge8d2ssn2k2tmv2jas</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA5839Y-sT6LAvnAH8nv_vN_9Ky4zQ9dkg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>989952315276</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>professional.TimetoLose</string>
+	<key>PROJECT_ID</key>
+	<string>timetolose-83c53</string>
+	<key>STORAGE_BUCKET</key>
+	<string>timetolose-83c53.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:989952315276:ios:9d852e5b267f975a81d0a9</string>
+</dict>
+</plist>

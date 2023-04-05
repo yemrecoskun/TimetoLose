@@ -93,7 +93,7 @@ public struct BottomBar : View {
     
     func itemView(at index: Int) -> some View {
         Button(action: {
-            withAnimation { self.selectedIndex = index }
+            self.selectedIndex = index 
         }) {
             BottomBarItemView(selected: self.$selectedIndex,
                               index: index,

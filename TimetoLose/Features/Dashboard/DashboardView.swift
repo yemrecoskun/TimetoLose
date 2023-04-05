@@ -9,8 +9,8 @@ import SwiftUI
 
 struct DashboardView: View {
     var body: some View {
-            VStack {
-                ScrollView {
+        ScrollView {
+                VStack {
                     WeeklyStreakView().padding(.horizontal,8).padding(.top,5)
                     SummaryDayView().padding(.horizontal,8).padding(.top,5)
                     CaloriesStatusView().padding(.horizontal,8).padding(.top,5)
