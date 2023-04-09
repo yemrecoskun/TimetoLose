@@ -64,6 +64,10 @@
 		B6AA813729DD2AE100F5373B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA813629DD2AE100F5373B /* AppView.swift */; };
 		B6AA813A29DD3BAE00F5373B /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA813929DD3BAE00F5373B /* AppViewModel.swift */; };
 		B6AA813E29DD3C0700F5373B /* App+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA813D29DD3C0700F5373B /* App+Extension.swift */; };
+		B6AA814129DD7C0A00F5373B /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA814029DD7C0A00F5373B /* UserDefaultsManager.swift */; };
+		B6AA814429DDB77E00F5373B /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA814329DDB77E00F5373B /* DashboardViewModel.swift */; };
+		B6AA818729E01C7F00F5373B /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6AA818529E01C7F00F5373B /* CoreDataModel.xcdatamodeld */; };
+		B6AA818929E01D0B00F5373B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA818829E01D0B00F5373B /* CoreDataManager.swift */; };
 		B6E3E428293343D30036ECE2 /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E427293343D30036ECE2 /* NetworkConnection.swift */; };
 		B6E3E42A293343DF0036ECE2 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E429293343DF0036ECE2 /* NetworkConstants.swift */; };
 		B6E3E42C293344010036ECE2 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3E42B293344010036ECE2 /* NetworkModel.swift */; };
@@ -164,6 +168,10 @@
 		B6AA813629DD2AE100F5373B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		B6AA813929DD3BAE00F5373B /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		B6AA813D29DD3C0700F5373B /* App+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Extension.swift"; sourceTree = "<group>"; };
+		B6AA814029DD7C0A00F5373B /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		B6AA814329DDB77E00F5373B /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		B6AA818629E01C7F00F5373B /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		B6AA818829E01D0B00F5373B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		B6E3E427293343D30036ECE2 /* NetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
 		B6E3E429293343DF0036ECE2 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		B6E3E42B293344010036ECE2 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
@@ -255,6 +263,7 @@
 				44FAEB3228E7346D00A955EA /* Persistence.swift */,
 				44FAEB3428E7346D00A955EA /* TimetoLose.xcdatamodeld */,
 				44FAEB2F28E7346D00A955EA /* Preview Content */,
+				B6AA818529E01C7F00F5373B /* CoreDataModel.xcdatamodeld */,
 			);
 			path = TimetoLose;
 			sourceTree = "<group>";
@@ -614,6 +623,28 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		B6AA813F29DD7BFE00F5373B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B6AA814029DD7C0A00F5373B /* UserDefaultsManager.swift */,
+				B6AA818829E01D0B00F5373B /* CoreDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B6AA814229DDB74700F5373B /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3E454293560430036ECE2 /* FoodRecipesView */,
+				B6E3E4482933935E0036ECE2 /* SummaryDayView */,
+				B6E3E45129354A860036ECE2 /* WeeklyStreakView */,
+				B6E9C623293A1BB30077A2FB /* WeeklyStatusView */,
+				B6E9C651293A9C960077A2FB /* WaterView */,
+				B6E9C64C293A853C0077A2FB /* CaloriesStatus */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		B6E3E426293343B80036ECE2 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -654,14 +685,10 @@
 		B6E3E433293346C50036ECE2 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				B6E9C651293A9C960077A2FB /* WaterView */,
-				B6E9C64C293A853C0077A2FB /* CaloriesStatus */,
-				B6E9C623293A1BB30077A2FB /* WeeklyStatusView */,
-				B6E3E45129354A860036ECE2 /* WeeklyStreakView */,
-				B6E3E4482933935E0036ECE2 /* SummaryDayView */,
-				B6E3E454293560430036ECE2 /* FoodRecipesView */,
+				B6AA814229DDB74700F5373B /* CustomView */,
 				B6E3E434293347370036ECE2 /* DashboardView.swift */,
 				B6E3E436293347490036ECE2 /* DashboardModel.swift */,
+				B6AA814329DDB77E00F5373B /* DashboardViewModel.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -673,6 +700,7 @@
 				B6E3E44129334B690036ECE2 /* AppIcon.swift */,
 				7C5F787D2944A35300317D8A /* AppStorageKeys.swift */,
 				7C5F787F2944A4D400317D8A /* InputSelections.swift */,
+				B6AA813F29DD7BFE00F5373B /* Manager */,
 				7CFF759329337449001F0D5F /* Extensions */,
 			);
 			path = Utilities;
@@ -932,12 +960,15 @@
 				B6E3E43B293347660036ECE2 /* ProfileBarModel.swift in Sources */,
 				7CFF75A729337D31001F0D5F /* ComponentDivider.swift in Sources */,
 				B630F57129D03E40002F1C46 /* ApplicationModels.swift in Sources */,
+				B6AA814129DD7C0A00F5373B /* UserDefaultsManager.swift in Sources */,
 				7C5F78822944A6E000317D8A /* View+Extension.swift in Sources */,
 				B6E3E43D293347750036ECE2 /* ProfileBarService.swift in Sources */,
 				B6E3E44A293393930036ECE2 /* SummaryDayView.swift in Sources */,
+				B6AA814429DDB77E00F5373B /* DashboardViewModel.swift in Sources */,
 				B6AA813729DD2AE100F5373B /* AppView.swift in Sources */,
 				B6E9C63C293A1C4A0077A2FB /* IndicatorPoint.swift in Sources */,
 				B6E3E459293562E60036ECE2 /* LabelImageView.swift in Sources */,
+				B6AA818729E01C7F00F5373B /* CoreDataModel.xcdatamodeld in Sources */,
 				7C6A9438293E5E8C004ACDBB /* NotificationView.swift in Sources */,
 				7CFF75952933745C001F0D5F /* Font+Extension.swift in Sources */,
 				B6E9C644293A1C4A0077A2FB /* PieChartRow.swift in Sources */,
@@ -960,6 +991,7 @@
 				7C5F787E2944A35300317D8A /* AppStorageKeys.swift in Sources */,
 				B6E9C63E293A1C4A0077A2FB /* Legend.swift in Sources */,
 				B6E9C640293A1C4A0077A2FB /* MagnifierRect.swift in Sources */,
+				B6AA818929E01D0B00F5373B /* CoreDataManager.swift in Sources */,
 				44FAEB3328E7346D00A955EA /* Persistence.swift in Sources */,
 				B6E3E428293343D30036ECE2 /* NetworkConnection.swift in Sources */,
 				B6E9C6162937FAC60077A2FB /* TabView.swift in Sources */,
@@ -1119,6 +1151,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimetoLose/Preview Content\"";
+				DEVELOPMENT_TEAM = 3PGW72MAUM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimetoLose/Resources/Info.plist;
@@ -1148,6 +1181,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimetoLose/Preview Content\"";
+				DEVELOPMENT_TEAM = 3PGW72MAUM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimetoLose/Resources/Info.plist;
@@ -1239,6 +1273,16 @@
 			);
 			currentVersion = 44FAEB3528E7346D00A955EA /* TimetoLose.xcdatamodel */;
 			path = TimetoLose.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		B6AA818529E01C7F00F5373B /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B6AA818629E01C7F00F5373B /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = B6AA818629E01C7F00F5373B /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -10,7 +10,7 @@ import SwiftUI
 struct ActivityView: View {
     var body: some View {
         VStack {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 HStack {
                     VStack(alignment: .leading) {
                         ComponentLabelBody(text: "Aktivite Puanınız",textColor: .brandOrange)
@@ -72,7 +72,7 @@ struct ActivityView: View {
                     }
                 }.padding(8).background(.white).cornerRadius(20).shadow(radius: 2).padding(8)
             }
-        }.padding(.vertical,10)
+        }
     }
     
     func activityView() -> some View {

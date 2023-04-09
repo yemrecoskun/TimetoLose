@@ -7,19 +7,24 @@
 
 import SwiftUI
 
+
 struct DashboardView: View {
+    @FetchRequest(sortDescriptors: []) var entity: FetchedResults<Entity>
+    
+    let topInset: CGFloat = 4
+    let horizontalInset: CGFloat = 8
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
                 VStack {
-                    WeeklyStreakView().padding(.horizontal,8).padding(.top,5)
-                    SummaryDayView().padding(.horizontal,8).padding(.top,5)
-                    CaloriesStatusView().padding(.horizontal,8).padding(.top,5)
-                    WaterView().padding(.horizontal,8).padding(.top,5)
-                    WeeklyStatusView().padding(.horizontal,8).padding(.top,5)
-                    FoodRecipesView().padding(.horizontal,8).padding(.top,5)
+                    WeeklyStreakView().padding(.horizontal,horizontalInset).padding(.top,topInset)
+                    SummaryDayView().padding(.horizontal,horizontalInset).padding(.top,topInset)
+                    CaloriesStatusView().padding(.horizontal,horizontalInset).padding(.top,topInset)
+                    WaterView().padding(.horizontal,horizontalInset).padding(.top,topInset)
+                    WeeklyStatusView().padding(.horizontal,horizontalInset).padding(.top,topInset)
+                    FoodRecipesView().padding(.horizontal,horizontalInset).padding(.top,topInset)
                     Spacer()
-                }.padding(.top,5)
-            }
+                }.padding(.top,1)
+        }.id("scrollView")
     }
 }
 

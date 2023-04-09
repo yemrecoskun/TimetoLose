@@ -2,7 +2,7 @@
 //  Persistence.swift
 //  TimetoLose
 //
-//  Created by T66140 on 30.09.2022.
+//  Created by Yunus Emre Coşkun on 30.09.2022.
 //
 
 import CoreData

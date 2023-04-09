@@ -15,7 +15,7 @@ struct TabViews: View {
         TabBarItem(icon: "figure.socialdance", title: "Activity", color: .lightAppColor),
         TabBarItem(icon: "person.fill", title: "Profile", color: .lightAppColor)
     ]
-     func menuView(at: Int) -> AnyView {
+    func menuView(at: Int) -> AnyView {
         switch at {
         case 0:
             return AnyView(DashboardView())
@@ -37,19 +37,20 @@ struct TabViews: View {
         
         VStack {
             Spacer()
-            ProfileBar().padding(.horizontal,8).padding(.vertical,30)
+            ProfileBar().padding(.horizontal,8).padding(.vertical,24)
             TabView {
                 ForEach(0..<items.count) { index in
-                    menuView(at: index).background(Color.background)
+                    menuView(at: index).background(Color.white)
                         .tabItem{
                             self.itemView(at: index)
                         }
+                        .tag(index)
                 }
             }.onAppear{
                 UITabBar.appearance().backgroundColor = UIColor(Color.white)
                 UITabBar.appearance().unselectedItemTintColor = UIColor(Color.black.opacity(0.7))
             }.accentColor(.brandOrange)
-        }.background(Color.background)
+        }.background(Color.white)
     }
 }
 

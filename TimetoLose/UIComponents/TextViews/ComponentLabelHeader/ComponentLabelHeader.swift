@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ComponentLabelHeader: View, BaseLabelProtocol {
     var text: String
-    var font: Font = .bodyLargeBlack
+    var font: Font = .bodyRegularBlack
     var textColor: Color = .gray
     var textAlignment: TextAlignment = .center
     private let textMinimumScale = 0.5

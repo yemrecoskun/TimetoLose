@@ -2,7 +2,7 @@
 //  TimetoLoseApp.swift
 //  TimetoLose
 //
-//  Created by T66140 on 30.09.2022.
+//  Created by Yunus Emre Coşkun on 30.09.2022.
 //
 
 import SwiftUI
@@ -21,10 +21,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct TimetoLoseApp: App {
     let persistenceController = PersistenceController.shared
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject private var coreData = CoreDataModel()
     
     var body: some Scene {
         WindowGroup {
-            AppView()
+            AppView().environment(\.managedObjectContext, coreData.container.viewContext)
         }
     }
 }

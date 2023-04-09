@@ -42,10 +42,10 @@ struct WeeklyStatusView: View {
                     ComponentLabelBody(text: "Hedef Kilo : 70 \n Hedefinize 5 hafta kaldı",textColor: .brandOrange)
                 }
                 Spacer()
-                ComponentLabelBody(text: "Aralık \n 25", font: .bodyRegularBold,textColor: .white).padding(12).background(Color.brandOrange).cornerRadius(25)
-            }.padding( 12).background(Color.brandOrange.opacity(0.2)).cornerRadius(25)
+                ComponentLabelBody(text: "Aralık \n 25", font: .bodyRegularBold,textColor: .white).padding(8).background(Color.brandOrange).cornerRadius(25)
+            }.padding(8).background(Color.brandOrange.opacity(0.2)).cornerRadius(25)
             
-        }.padding(10).background(.white).cornerRadius(20).shadow(radius: 2)
+        }.padding(8).background(.white).cornerRadius(20).shadow(radius: 2)
     }
 }
 

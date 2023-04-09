@@ -18,7 +18,7 @@ struct LabelImageView: View {
                 ComponentLabelHeader(text: "Mercimek Çorbası",textColor: .brandOrange)
                 ComponentLabelBody(text: "Description Description Description Description Description Description ",textColor: .black)
             }
-        }.padding(20).background(Color.white).cornerRadius(22).shadow(radius: 2)
+        }.padding(10).background(Color.white).cornerRadius(22).shadow(radius: 2)
     }
 }
 

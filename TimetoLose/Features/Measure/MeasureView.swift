@@ -10,7 +10,7 @@ import SwiftUI
 struct MeasureView: View {
     var body: some View {
         VStack {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack {
                     keyValueText(key: "Boy", value: "185")
                     keyValueText(key: "Kilo", value: "82")
@@ -46,7 +46,7 @@ struct MeasureView: View {
                         }
                     }
                 }.padding(8).background(Color.brandOrange).cornerRadius(20).padding(.horizontal,10)
-            }.padding(.vertical,10)
+            }
         }
     }
     func keyView(_ value: String) -> some View {

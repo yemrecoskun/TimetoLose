@@ -24,7 +24,7 @@ struct AnyDiseaseView: View {
     var body: some View {
         ZStack {
             Color.background.ignoresSafeArea()
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack {
                     ComponentLabelHeader(text: AppText.AnyDiseaseView.header, font: .bodyExtraLarge, textColor: .brandOrange)
                     ComponentLabelBody(text: AppText.AnyDiseaseView.body, font: .bodyRegular, textColor: .brandOrange)

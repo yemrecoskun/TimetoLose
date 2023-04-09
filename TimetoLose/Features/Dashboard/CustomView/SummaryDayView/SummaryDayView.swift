@@ -7,16 +7,17 @@
 import SwiftUI
 
 struct SummaryDayView: View {
+    let circleSize: CGFloat = 10
     var body: some View {
         VStack(alignment: .leading) {
             ComponentLabelHeader(text: AppText.getText(.summaryDayTitle),textColor: .brandOrange).padding(10)
             HStack {
                 ZStack {
-                    ProcessCircleView(lineWidth: 10, percentage: 0.98, percentageColor: .darkPurple)
-                    ProcessCircleView(lineWidth: 10, percentage: 0.3, percentageColor: .darkPing).padding(14)
-                    ProcessCircleView(lineWidth: 10, percentage: 0.7, percentageColor: .darkYellow).padding(28)
-                    ProcessCircleView(lineWidth: 10, percentage: 0.5, percentageColor: .lightYellow).padding(42)
-                    ProcessCircleView(lineWidth: 10, percentage: 0.2, percentageColor: .brandOrange).padding(56)
+                    ProcessCircleView(lineWidth: circleSize, percentage: 0.98, percentageColor: .darkPurple)
+                    ProcessCircleView(lineWidth: circleSize, percentage: 0.3, percentageColor: .darkPing).padding(14)
+                    ProcessCircleView(lineWidth: circleSize, percentage: 0.7, percentageColor: .darkYellow).padding(28)
+                    ProcessCircleView(lineWidth: circleSize, percentage: 0.5, percentageColor: .lightYellow).padding(42)
+                    ProcessCircleView(lineWidth: circleSize, percentage: 0.2, percentageColor: .brandOrange).padding(56)
                 }.padding(2)
                 Spacer()
                 VStack(alignment: .leading) {

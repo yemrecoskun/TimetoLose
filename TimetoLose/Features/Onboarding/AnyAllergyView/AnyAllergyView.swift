@@ -21,7 +21,7 @@ struct AnyAllergyView: View {
     var body: some View {
         ZStack {
             Color.background.ignoresSafeArea()
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack {
                     ComponentLabelHeader(text: AppText.AnyAllergyView.header, font: .bodyExtraLarge, textColor: .brandOrange)
                     ComponentLabelBody(text: AppText.AnyAllergyView.body, font: .bodyRegular, textColor: .brandOrange)

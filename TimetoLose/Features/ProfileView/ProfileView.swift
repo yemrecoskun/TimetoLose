@@ -55,12 +55,16 @@ struct ProfileView: View {
             VStack {
                 HStack {
                     ComponentLabelBody(text: textValue,
-                                       font: .bodyRegularBold ,
+                                       font: .bodyRegularBold,
                                        textColor: .brandOrange)
                     Spacer()
                     ZStack {
-                        ComponentLabelBody(text: ">",font: .bodyLarge, textColor: .brandOrange)
-                        Circle().stroke(Color.brandOrange,lineWidth: 1).frame(width: 22,height: 22)
+                        ComponentLabelBody(text: ">",
+                                           font: .bodyLarge,
+                                           textColor: .brandOrange)
+                        Circle().stroke(Color.brandOrange,
+                                        lineWidth: 1).frame(width: 22,
+                                                            height: 22)
                     }.padding(1)
                 }
                 Divider()

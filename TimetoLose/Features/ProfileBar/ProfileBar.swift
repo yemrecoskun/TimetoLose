@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ProfileBar: View {
+    var userName: String
+    init() {
+        self.userName = UserDefaultsManager.key.userName.get() ?? ""
+    }
     var body: some View {
         HStack {
             Spacer()
@@ -18,7 +22,7 @@ struct ProfileBar: View {
             VStack(alignment: .leading) {
                 Text(AppText.getText(.welcome))
                 Spacer()
-                Text("Ahmet Yasin").bold()
+                Text(userName).bold()
             }
             Spacer()
             AppIcon.getIcon(.notification)?.padding(8).background(Color.brandOrange).border(.white,width: 0.4)
