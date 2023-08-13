@@ -9,8 +9,8 @@ import SwiftUI
 
 struct CurrentWeightView: View {
     @State private var isButtonNextDisabled = false
-    @AppStorage(AppStorageKeys.currentWeight) private var currentWeight = ""
-    @AppStorage(AppStorageKeys.measureTypeWeight) private var measureTypeWeight = "kg"
+    @State private var currentWeight = ""
+    @State private var measureTypeWeight = "kg"
     @State private var isMoveToNextScreen = false
     private let measureTypeList = ["kg", "lb"]
     private let placeholderOpacity = 0.5
@@ -61,6 +61,8 @@ struct CurrentWeightView: View {
         .go(to: TargetWeightView(), when: $isMoveToNextScreen)
     }
     private func buttonNextTapped() {
+        OnboardingModel.shared.currentWeightInput = currentWeight
+        OnboardingModel.shared.measureTypeWeightInput = measureTypeWeight
         isMoveToNextScreen = true
     }
 }

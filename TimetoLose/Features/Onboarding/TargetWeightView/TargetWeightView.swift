@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TargetWeightView: View {
     @State private var isButtonNextDisabled = false
-    @AppStorage(AppStorageKeys.targetWeight) private var targetWeight = ""
+    @State private var targetWeight = ""
     @State private var isMoveToNextScreen = false
     private let placeholderOpacity = 0.5
     private let nextButtonCornerRadius: CGFloat = 100
@@ -51,9 +51,10 @@ struct TargetWeightView: View {
                 ComponentPrimaryButton(title: AppText.Common.next, titleColor: .brandOrange, buttonColor: .white, cornerRadius: nextButtonCornerRadius, width: buttonWidth, isDisabled: $isButtonNextDisabled, action: buttonNextTapped)
             }
         }
-        .go(to: TabViews(), when: $isMoveToNextScreen)
+        .go(to: ActivityLevelView(), when: $isMoveToNextScreen)
     }
     private func buttonNextTapped() {
+        OnboardingModel.shared.targetWeightInput = targetWeight
         isMoveToNextScreen = true
     }
 }

@@ -21,11 +21,10 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct TimetoLoseApp: App {
     let persistenceController = PersistenceController.shared
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    @StateObject private var coreData = CoreDataModel()
     
     var body: some Scene {
         WindowGroup {
-            AppView().environment(\.managedObjectContext, coreData.container.viewContext)
+            AppView()
         }
     }
 }

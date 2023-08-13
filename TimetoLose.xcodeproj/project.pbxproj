@@ -18,6 +18,8 @@
 		7C5F787E2944A35300317D8A /* AppStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F787D2944A35300317D8A /* AppStorageKeys.swift */; };
 		7C5F78802944A4D400317D8A /* InputSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F787F2944A4D400317D8A /* InputSelections.swift */; };
 		7C5F78822944A6E000317D8A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F78812944A6E000317D8A /* View+Extension.swift */; };
+		7C636CF52A87BA910087118D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7C636CF42A87BA910087118D /* Realm */; };
+		7C636CF72A87BA910087118D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7C636CF62A87BA910087118D /* RealmSwift */; };
 		7C6A9431293E567E004ACDBB /* AnyMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A9430293E567E004ACDBB /* AnyMedicationView.swift */; };
 		7C6A9434293E5B63004ACDBB /* AnyAllergyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A9433293E5B63004ACDBB /* AnyAllergyView.swift */; };
 		7C6A9438293E5E8C004ACDBB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A9437293E5E8C004ACDBB /* NotificationView.swift */; };
@@ -27,6 +29,7 @@
 		7C8571C72936676B001154EF /* SpecificDietView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571C62936676B001154EF /* SpecificDietView.swift */; };
 		7C8571CA29366A19001154EF /* AnySnackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571C929366A19001154EF /* AnySnackView.swift */; };
 		7C8571CD29366C62001154EF /* AnyDiseaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8571CC29366C62001154EF /* AnyDiseaseView.swift */; };
+		7C8F45F02A83EF2700CC5CF2 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8F45EF2A83EF2700CC5CF2 /* OnboardingModel.swift */; };
 		7CA6E9A4294113E900414672 /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6E9A3294113E900414672 /* HeightView.swift */; };
 		7CA6E9A7294117E300414672 /* CurrentWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6E9A6294117E300414672 /* CurrentWeightView.swift */; };
 		7CA6E9AA294118B200414672 /* TargetWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6E9A9294118B200414672 /* TargetWeightView.swift */; };
@@ -135,6 +138,7 @@
 		7C8571C62936676B001154EF /* SpecificDietView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificDietView.swift; sourceTree = "<group>"; };
 		7C8571C929366A19001154EF /* AnySnackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySnackView.swift; sourceTree = "<group>"; };
 		7C8571CC29366C62001154EF /* AnyDiseaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDiseaseView.swift; sourceTree = "<group>"; };
+		7C8F45EF2A83EF2700CC5CF2 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		7CA6E9A3294113E900414672 /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
 		7CA6E9A6294117E300414672 /* CurrentWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeightView.swift; sourceTree = "<group>"; };
 		7CA6E9A9294118B200414672 /* TargetWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetWeightView.swift; sourceTree = "<group>"; };
@@ -222,7 +226,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C636CF52A87BA910087118D /* Realm in Frameworks */,
 				B68D5FD329D047F300CBBE30 /* FirebaseFirestoreSwift in Frameworks */,
+				7C636CF72A87BA910087118D /* RealmSwift in Frameworks */,
 				B60A3A8D29C25F3000A128DE /* FirebaseAnalytics in Frameworks */,
 				B60A3A9329C25F3000A128DE /* FirebaseStorage in Frameworks */,
 				B60A3A8F29C25F3000A128DE /* FirebaseAuth in Frameworks */,
@@ -580,6 +586,7 @@
 			isa = PBXGroup;
 			children = (
 				B630F57029D03E40002F1C46 /* ApplicationModels.swift */,
+				7C8F45EF2A83EF2700CC5CF2 /* OnboardingModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -866,6 +873,8 @@
 				B60A3A9029C25F3000A128DE /* FirebaseFirestore */,
 				B60A3A9229C25F3000A128DE /* FirebaseStorage */,
 				B68D5FD229D047F300CBBE30 /* FirebaseFirestoreSwift */,
+				7C636CF42A87BA910087118D /* Realm */,
+				7C636CF62A87BA910087118D /* RealmSwift */,
 			);
 			productName = TimetoLose;
 			productReference = 44FAEB2628E7346A00A955EA /* TimetoLose.app */;
@@ -897,6 +906,7 @@
 			mainGroup = 44FAEB1D28E7346A00A955EA;
 			packageReferences = (
 				B60A3A8B29C25F3000A128DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7C636CF32A87BA900087118D /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 44FAEB2728E7346A00A955EA /* Products */;
 			projectDirPath = "";
@@ -1003,6 +1013,7 @@
 				7CFF75A329337B9D001F0D5F /* UIScreen+Extension.swift in Sources */,
 				B6E3E430293345520036ECE2 /* Service.swift in Sources */,
 				7CFF756E2933715D001F0D5F /* BaseLabelProtocol.swift in Sources */,
+				7C8F45F02A83EF2700CC5CF2 /* OnboardingModel.swift in Sources */,
 				7C0056C22935D04000CA6464 /* GenderView.swift in Sources */,
 				7C8571C429366286001154EF /* ComponentButtonWithHintView.swift in Sources */,
 				7CA6E9A7294117E300414672 /* CurrentWeightView.swift in Sources */,
@@ -1227,6 +1238,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7C636CF32A87BA900087118D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.41.0;
+			};
+		};
 		B60A3A8B29C25F3000A128DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -1238,6 +1257,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7C636CF42A87BA910087118D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C636CF32A87BA900087118D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		7C636CF62A87BA910087118D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C636CF32A87BA900087118D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		B60A3A8C29C25F3000A128DE /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B60A3A8B29C25F3000A128DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

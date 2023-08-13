@@ -6,16 +6,27 @@
 //
 
 import SwiftUI
-
+import RealmSwift
 
 struct DashboardView: View {
     @FetchRequest(sortDescriptors: []) var entity: FetchedResults<Entity>
+    @ObservedResults(OnboardingModel.self) var onboardingModels
     
     let topInset: CGFloat = 4
     let horizontalInset: CGFloat = 8
     var body: some View {
         ScrollView(showsIndicators: false) {
                 VStack {
+                    ForEach(onboardingModels) { onboardingModel in
+                        Text("\(onboardingModel.genderInput)")
+                        Text("\(onboardingModel.ageInput)")
+                        Text("\(onboardingModel.heightInput)")
+                        Text("\(onboardingModel.measureTypeHeightInput)")
+                        Text("\(onboardingModel.currentWeightInput)")
+                        Text("\(onboardingModel.measureTypeWeightInput)")
+                        Text("\(onboardingModel.targetWeightInput)")
+                        Text("\(onboardingModel.activityLevelInput)")
+                    }
                     WeeklyStreakView().padding(.horizontal,horizontalInset).padding(.top,topInset)
                     SummaryDayView().padding(.horizontal,horizontalInset).padding(.top,topInset)
                     CaloriesStatusView().padding(.horizontal,horizontalInset).padding(.top,topInset)

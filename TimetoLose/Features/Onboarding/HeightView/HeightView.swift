@@ -9,8 +9,8 @@ import SwiftUI
 
 struct HeightView: View {
     @State private var isButtonNextDisabled = false
-    @AppStorage(AppStorageKeys.height) private var height = ""
-    @AppStorage(AppStorageKeys.measureTypeHeight) private var measureTypeHeight = "cm"
+    @State private var height = ""
+    @State private var measureTypeHeight = "cm"
     @State private var isMoveToNextScreen = false
     private let measureTypeList = ["cm", "ft"]
     private let placeholderOpacity = 0.5
@@ -61,6 +61,8 @@ struct HeightView: View {
         .go(to: CurrentWeightView(), when: $isMoveToNextScreen)
     }
     private func buttonNextTapped() {
+        OnboardingModel.shared.heightInput = height
+        OnboardingModel.shared.measureTypeHeightInput = measureTypeHeight
         isMoveToNextScreen = true
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AgeView: View {
     @State private var isButtonNextDisabled = false
-    @AppStorage(AppStorageKeys.age) private var age = ""
+    @State private var age = ""
     @State private var isMoveToNextScreen = false
     private let placeholderOpacity = 0.5
     private let nextButtonCornerRadius: CGFloat = 100
@@ -45,6 +45,7 @@ struct AgeView: View {
         .go(to: HeightView(), when: $isMoveToNextScreen)
     }
     private func buttonNextTapped() {
+        OnboardingModel.shared.ageInput = age
         isMoveToNextScreen = true
     }
 }

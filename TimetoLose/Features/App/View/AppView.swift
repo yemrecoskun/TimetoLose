@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import RealmSwift
 
 enum AppVersion {
     case forceUpdate
@@ -15,6 +16,9 @@ enum AppVersion {
     case undefield
 }
 public struct AppView : View {
+    init() {
+        RealmMigrator.performMigration()
+    }
     
     @StateObject var viewModel = AppViewModel()
     
@@ -55,3 +59,24 @@ public struct AppView : View {
     }
 }
 
+enum RealmMigrator {
+    static func performMigration() {
+        let config = Realm.Configuration(
+            schemaVersion: 2,
+            migrationBlock: { migration, oldSchemaVersion in
+                if oldSchemaVersion < 2 {
+                    migration.enumerateObjects(ofType: OnboardingModel.className()) { oldObject, newObject in
+                    }
+                }
+            }
+        )
+        
+        Realm.Configuration.defaultConfiguration = config
+        
+        do {
+            let _ = try Realm()
+        } catch {
+            print("Realm Migration Error: \(error)")
+        }
+    }
+}

@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct ActivityLevelView: View {
     @State private var isMoveToNextScreen = false
-    @AppStorage(AppStorageKeys.activityLevel) private var activityLevel = ""
+    @State private var activityLevel = ""
     private let buttonWidth = UIScreen.screenWidth * 0.8
 
     var body: some View {
@@ -28,22 +29,36 @@ struct ActivityLevelView: View {
                 Spacer()
             }
         }
-        .go(to: CurrentWeightView(), when: $isMoveToNextScreen)
+        .go(to: TabViews(), when: $isMoveToNextScreen)
+    }
+    private func saveOnboardingObjectToRealm() {
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.add(OnboardingModel.shared)
+            }
+        } catch {
+            print("Realm write error: \(error)")
+        }
     }
     private func lightlyActiveButtonTapped() {
-        activityLevel = InputSelections.ActivityLevel.lightlyActive
+        OnboardingModel.shared.activityLevelInput = InputSelections.ActivityLevel.lightlyActive
+        saveOnboardingObjectToRealm()
         isMoveToNextScreen = true
     }
     private func moderatelyActiveButtonTapped() {
-        activityLevel = InputSelections.ActivityLevel.moderatelyActive
+        OnboardingModel.shared.activityLevelInput = InputSelections.ActivityLevel.moderatelyActive
+        saveOnboardingObjectToRealm()
         isMoveToNextScreen = true
     }
     private func activeButtonTapped() {
-        activityLevel = InputSelections.ActivityLevel.active
+        OnboardingModel.shared.activityLevelInput = InputSelections.ActivityLevel.active
+        saveOnboardingObjectToRealm()
         isMoveToNextScreen = true
     }
     private func veryActiveButtonTapped() {
-        activityLevel = InputSelections.ActivityLevel.veryActive
+        OnboardingModel.shared.activityLevelInput = InputSelections.ActivityLevel.veryActive
+        saveOnboardingObjectToRealm()
         isMoveToNextScreen = true
     }
 }
