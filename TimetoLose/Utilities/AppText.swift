@@ -43,6 +43,8 @@ struct AppText {
         static let header = "How tall are you?"
         static let body = "Your height is also crucial for calculating your ideal calorie intake and macros."
         static let placeholder = "Enter your height"
+        static let placeholderFT = "Ft"
+        static let placeholderINCH = "Inch"
     }
 
     struct CurrentWeightView {

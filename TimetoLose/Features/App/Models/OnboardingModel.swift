@@ -15,7 +15,9 @@ final class OnboardingModel: Object, ObjectKeyIdentifiable {
     @Persisted var goalInput: Int
     @Persisted var genderInput: String
     @Persisted var ageInput: String
-    @Persisted var heightInput: String
+    @Persisted var heightInputCM: String
+    @Persisted var heightInputFT: String
+    @Persisted var heightInputINCH: String
     @Persisted var measureTypeHeightInput: String
     @Persisted var currentWeightInput: String
     @Persisted var measureTypeWeightInput: String

@@ -39,8 +39,8 @@ import SwiftUI
 //    }
 //}
 
-struct SpecificDietView_Previews: PreviewProvider {
-    static var previews: some View {
-        SpecificDietView()
-    }
-}
+//struct SpecificDietView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SpecificDietView()
+//    }
+//}

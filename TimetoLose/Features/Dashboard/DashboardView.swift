@@ -20,7 +20,7 @@ struct DashboardView: View {
                     ForEach(onboardingModels) { onboardingModel in
                         Text("\(onboardingModel.genderInput)")
                         Text("\(onboardingModel.ageInput)")
-                        Text("\(onboardingModel.heightInput)")
+                        Text("\(onboardingModel.heightInputCM)")
                         Text("\(onboardingModel.measureTypeHeightInput)")
                         Text("\(onboardingModel.currentWeightInput)")
                         Text("\(onboardingModel.measureTypeWeightInput)")
