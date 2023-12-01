@@ -63,7 +63,6 @@
 		B630F57129D03E40002F1C46 /* ApplicationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630F57029D03E40002F1C46 /* ApplicationModels.swift */; };
 		B68D5FD329D047F300CBBE30 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B68D5FD229D047F300CBBE30 /* FirebaseFirestoreSwift */; };
 		B697B11B293B7A3300E7209B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B697B11A293B7A3300E7209B /* ProfileView.swift */; };
-		B6AA813429DD213E00F5373B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6AA813329DD213E00F5373B /* GoogleService-Info.plist */; };
 		B6AA813729DD2AE100F5373B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA813629DD2AE100F5373B /* AppView.swift */; };
 		B6AA813A29DD3BAE00F5373B /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA813929DD3BAE00F5373B /* AppViewModel.swift */; };
 		B6AA813E29DD3C0700F5373B /* App+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA813D29DD3C0700F5373B /* App+Extension.swift */; };
@@ -114,10 +113,11 @@
 		B6E9C653293A9CA20077A2FB /* WaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C652293A9CA20077A2FB /* WaterView.swift */; };
 		B6E9C656293AB04E0077A2FB /* MeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C655293AB04E0077A2FB /* MeasureView.swift */; };
 		B6E9C65C293B50500077A2FB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9C65B293B50500077A2FB /* ActivityView.swift */; };
+		B8480C802B1A34170061B18C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8480C7F2B1A34170061B18C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		44FAEB2628E7346A00A955EA /* TimetoLose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimetoLose.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44FAEB2628E7346A00A955EA /* Time To Lose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time To Lose.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FAEB2928E7346A00A955EA /* TimetoLoseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetoLoseApp.swift; sourceTree = "<group>"; };
 		44FAEB2D28E7346D00A955EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44FAEB3028E7346D00A955EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -168,7 +168,6 @@
 		7CFF75A929337D36001F0D5F /* ComponentSpacer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentSpacer.swift; sourceTree = "<group>"; };
 		B630F57029D03E40002F1C46 /* ApplicationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationModels.swift; sourceTree = "<group>"; };
 		B697B11A293B7A3300E7209B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		B6AA813329DD213E00F5373B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B6AA813629DD2AE100F5373B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		B6AA813929DD3BAE00F5373B /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		B6AA813D29DD3C0700F5373B /* App+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Extension.swift"; sourceTree = "<group>"; };
@@ -219,6 +218,7 @@
 		B6E9C652293A9CA20077A2FB /* WaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterView.swift; sourceTree = "<group>"; };
 		B6E9C655293AB04E0077A2FB /* MeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureView.swift; sourceTree = "<group>"; };
 		B6E9C65B293B50500077A2FB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		B8480C7F2B1A34170061B18C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,7 +251,7 @@
 		44FAEB2728E7346A00A955EA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44FAEB2628E7346A00A955EA /* TimetoLose.app */,
+				44FAEB2628E7346A00A955EA /* Time To Lose.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -488,7 +488,7 @@
 		7CFF757A293371C2001F0D5F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B6AA813329DD213E00F5373B /* GoogleService-Info.plist */,
+				B8480C7F2B1A34170061B18C /* GoogleService-Info.plist */,
 				7CFF757B293371D0001F0D5F /* Fonts */,
 				7CFF75922933737E001F0D5F /* Info.plist */,
 				7CFF759A29337813001F0D5F /* Colors.xcassets */,
@@ -877,7 +877,7 @@
 				7C636CF62A87BA910087118D /* RealmSwift */,
 			);
 			productName = TimetoLose;
-			productReference = 44FAEB2628E7346A00A955EA /* TimetoLose.app */;
+			productReference = 44FAEB2628E7346A00A955EA /* Time To Lose.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -924,7 +924,7 @@
 			files = (
 				44FAEB3128E7346D00A955EA /* Preview Assets.xcassets in Resources */,
 				7CFF758D293371D0001F0D5F /* Roboto-Italic.ttf in Resources */,
-				B6AA813429DD213E00F5373B /* GoogleService-Info.plist in Resources */,
+				B8480C802B1A34170061B18C /* GoogleService-Info.plist in Resources */,
 				44FAEB2E28E7346D00A955EA /* Assets.xcassets in Resources */,
 				7CFF758C293371D0001F0D5F /* Roboto-LightItalic.ttf in Resources */,
 				7CFF758F293371D0001F0D5F /* Roboto-Bold.ttf in Resources */,
@@ -1160,12 +1160,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"TimetoLose/Preview Content\"";
-				DEVELOPMENT_TEAM = 3PGW72MAUM;
+				DEVELOPMENT_TEAM = QH2CGK27UU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimetoLose/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1175,9 +1176,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = professional.TimetoLose;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ue.TimetoLose;
+				PRODUCT_NAME = "Time To Lose";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1190,12 +1194,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"TimetoLose/Preview Content\"";
-				DEVELOPMENT_TEAM = 3PGW72MAUM;
+				DEVELOPMENT_TEAM = QH2CGK27UU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimetoLose/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1205,9 +1210,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = professional.TimetoLose;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ue.TimetoLose;
+				PRODUCT_NAME = "Time To Lose";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1251,7 +1259,7 @@
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				minimumVersion = 10.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

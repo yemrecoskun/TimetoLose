@@ -30,6 +30,7 @@ class AppViewModel: ObservableObject {
                     self.app = .done
                 }
             } else {
+                self.app = .done
                 print("Document does not exist")
             }
         }
