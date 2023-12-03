@@ -9,21 +9,21 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.ue.TimetoLose</string>
+	<string>com.ue.timetolose</string>
 	<key>PROJECT_ID</key>
 	<string>timetolose</string>
 	<key>STORAGE_BUCKET</key>
 	<string>timetolose.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:128957509033:ios:558d737b0f52a51c8128b8</string>
 </dict>
